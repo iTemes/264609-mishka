@@ -14,10 +14,10 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Каталог товаров</a>
+              <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Вязание на заказ</a>
+              <a href="form.html" class="main-nav__link">Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
               <a href="#" class="main-nav__link">Поиск по сайту</a>
@@ -32,12 +32,12 @@
         Милые штуки ручной работы для дома
       </h1>
       <div class="page-header__categories">
-        <div class="page-header__topic">
+        <span class="page-header__topic">
           Предметы интерьера
-        </div>
-        <div class="page-header__topic">
+        </span>
+        <span class="page-header__topic">
           Детские игрушки
-        </div>
+        </span>
       </div>
     </header>
     <section class="featured">
@@ -136,26 +136,32 @@
       <a class="btn" href="#">Напишите нам</a>
     </section>
     <footer class="page-footer">
-      <span class="social_links">
+      <span class="social-links">
         <a class="social-link social-link--inst" href="#">Мы в Инстаграме</a>
         <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
         <a class="social-link social-link--tw" href="#">Мы в Твиттере</a>
       </span>
-      <p class="page-footer__copyright">Разработано:
+      <div class="page-footer__copyright">
+        <b class="page-footer__text">Разработано:</b>
         <a class="page-footer__icon-link" href="https://htmlacademy.ru">
           <img src="http://placehold.it/27x34" width="27" height="34" alt="html-logo">
         </a>
-      </p>
-    </footer>
-    <section class="basket-modal">
-      <h1 class="basket-modal__title">Добавить в корзину</h1>
-      <div class="product-size">
-        <p class="product-size__text">Выберите размер</p>
-        <span class="product-size__value">S</span>
-        <span class="product-size__value">M</span>
-        <span class="product-size__value">L</span>
       </div>
-      <a class="modal-btn" href="#">Добавить</a>
+    </footer>
+    <section class="basket-modal basket-modal--hidden">
+      <form action="https://echo.htmlacademy.ru/" method="post" class="basket-modal__form">
+        <h1 class="basket-modal__title">Добавить в корзину</h1>
+        <div class="product-size">
+          <p class="product-size__text">Выберите размер</p>
+          <input type="radio" class="product-size__value" id="s" name="size" value="s">
+          <label for="s">S</label>
+          <input type="radio" class="product-size__value" id="m" name="size" value="m">
+          <label for="m">M</label>
+          <input type="radio" class="product-size__value" id="l" name="size" value="l">
+          <label for="l">L</label>
+        </div>
+        <button class="btn" type="submit">Добавить</button>
+      </form>
     </section>
   </body>
 </html>
