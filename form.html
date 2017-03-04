@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Мишка: Форма заказа</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="http://placehold.it/85x35" width="85" height="35" alt="mishka">
+      </div>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-header__title">
+        Вязание на заказ
+      </h1>
+    </header>
+      <section class="order-form">
+        <p class="order-form__text">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+          форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form-group">
+            <div class="form-group__item">
+              <label for="decor">Аксессуары для интерьера
+                <input type="radio" id="decor" name="product-type" value="1" checked>
+              </label>
+            </div>
+            <div>
+              <label for="toys">Детские игрушки
+                <input type="radio" id="toys" name="product-type" value="2">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <div class="form-group__item">
+              <label for="white">
+                <input type="checkbox" id="white" name="white" checked>Белый
+              </label>
+            </div>
+            <div class="form-group__item">
+              <label for="white">
+                <input type="checkbox" id="gray" name="gray" checked>Серый
+              </label>
+            </div>
+            <div class="form-group__item">
+              <label for="white">
+                <input type="checkbox" id="tif" name="tif" >"Тиффани"
+              </label>
+            </div>
+            <div class="form-group__item">
+              <label for="white">
+                <input type="checkbox" id="black" name="black" >Черный
+              </label>
+            </div>
+            <div class="form-group__item">
+              <label for="white">
+                <input type="checkbox" id="pink" name="pink" >Розовый
+              </label>
+            </div>
+            <div class="form-group__item">
+              <label for="white">
+                <input type="checkbox" id="orange" name="orange" >Оранжевый
+              </label>
+            </div>
+
+          </fieldset>
+        </form>
+      </section>
+
+      <footer class="page-footer">
+        <span class="social_links">
+          <a class="social-link social-link--inst" href="#">Мы в Инстаграме</a>
+          <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
+          <a class="social-link social-link--tw" href="#">Мы в Твиттере</a>
+        </span>
+        <p class="page-footer__copyright">Разработано:
+          <a class="page-footer__icon-link" href="https://htmlacademy.ru">
+            <img src="http://placehold.it/27x34" width="27" height="34" alt="html-logo">
+          </a>
+        </p>
+      </footer>
+  </body>
+</html>
