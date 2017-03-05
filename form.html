@@ -7,23 +7,23 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="http://placehold.it/85x35" width="85" height="35" alt="mishka">
+        <img src="http://placehold.it/85x35" width="85" height="35" alt="Логотип страницы">
       </div>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Поиск по сайту</a>
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -40,90 +40,88 @@
         <form action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form-group">
             <div class="form-group__item">
-              <label for="decor">
-                <input type="radio" id="decor" name="product-type" value="interior-accessory" checked>
+              <label for="decor-group">
+                <input type="radio" id="decor-group" name="product-type" value="interior-accessory" checked>
                 Аксессуары для интерьера
               </label>
             </div>
             <div>
-              <label for="toys">
-                <input type="radio" id="toys" name="product-type" value="child-toys">
+              <label for="toys-group">
+                <input type="radio" id="toys-group" name="product-type" value="child-toys">
                 Детские игрушки
               </label>
             </div>
           </fieldset>
           <fieldset class="form-group">
             <div class="form-group__item">
-              <label for="white">
-                <input type="checkbox" id="white" name="white" checked>Белый
+              <label for="white-item">
+                <input type="checkbox" id="white-item" name="white" checked>Белый
               </label>
             </div>
             <div class="form-group__item">
-              <label for="gray">
-                <input type="checkbox" id="gray" name="gray" checked>Серый
+              <label for="gray-item">
+                <input type="checkbox" id="gray-item" name="gray" checked>Серый
               </label>
             </div>
             <div class="form-group__item">
-              <label for="tif">
-                <input type="checkbox" id="tif" name="tif" >"Тиффани"
+              <label for="tif-item">
+                <input type="checkbox" id="tif-item" name="tif">"Тиффани"
               </label>
             </div>
             <div class="form-group__item">
-              <label for="black">
-                <input type="checkbox" id="black" name="black" >Черный
+              <label for="black-item">
+                <input type="checkbox" id="black-item" name="black">Черный
               </label>
             </div>
             <div class="form-group__item">
-              <label for="pink">
-                <input type="checkbox" id="pink" name="pink" >Розовый
+              <label for="pink-item">
+                <input type="checkbox" id="pink-item" name="pink">Розовый
               </label>
             </div>
             <div class="form-group__item">
-              <label for="orange">
-                <input type="checkbox" id="orange" name="orange" >Оранжевый
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="form-group">
-            <div class="form-group__item">
-              <label for="name">Ваше имя:
-                <input type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
-              </label>
-            </div>
-            <div class="form-group__item">
-              <label for="surname">Ваша фамилия :
-                <input type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
-              </label>
-            </div>
-            <div class="form-group__item">
-              <label for="patronymic"> Ваше отчество :
-                <input type="text" id="patronymic" name="patronymic" placeholder="Отчество,если желаете">
+              <label for="orange-item">
+                <input type="checkbox" id="orange-item" name="orange">Оранжевый
               </label>
             </div>
           </fieldset>
           <fieldset class="form-group">
             <div class="form-group__item">
-              <label for="phone">ТЕЛ
-                <input type="tel" id="phone" name="phone"
+              <label for="person-name">Ваше имя:
+                <input type="text" id="person-name" name="name" placeholder="Введите ваше имя*" required>
+              </label>
+            </div>
+            <div class="form-group__item">
+              <label for="person-surname">Ваша фамилия:
+                <input type="text" id="person-surname" name="surname" placeholder="Укажите фамилию*" required>
+              </label>
+            </div>
+            <div class="form-group__item">
+              <label for="person-patronymic">Ваше отчество:
+                <input type="text" id="person-patronymic" name="patronymic" placeholder="Отчество, если желаете">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <div class="form-group__item">
+              <label for="person-phone">тел
+                <input type="tel" id="person-phone" name="phone"
                 placeholder="+7 XXX XXX XX XX*" pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
               </label>
             </div>
             <div class="form-group__item">
-              <label for="mail">E-MAIL
-                <input type="email" id="mail" name="mail" placeholder="Ваш Email*" required>
+              <label for="person-mail">e-mail
+                <input type="email" id="person-mail" name="mail" placeholder="Ваш Email*" required>
               </label>
             </div>
             <div class="form-group__item">
-              <label for="mail">ДОП
-                <textarea id="additional" name="additional" rows="10">
+              <label for="person-additional">доп
+                <textarea id="person-additional" name="additional" rows="10">
                 </textarea>
               </label>
             </div>
           </fieldset>
-          <p class="form-group__text">
-            *Поля обязательны для заполнения
-          </p>
-          <button class="btn" type="submit">Отправить заказ</button>
+          <p class="form-group__text">*Поля обязательны для заполнения</p>
+          <button class="button" type="submit">Отправить заказ</button>
         </form>
       </section>
       <footer class="page-footer">
@@ -135,7 +133,7 @@
         <div class="page-footer__copyright">
           <b class="page-footer__text">Разработано:</b>
           <a class="page-footer__icon-link" href="https://htmlacademy.ru">
-            <img src="http://placehold.it/27x34" width="27" height="34" alt="html-logo">
+            <img src="http://placehold.it/27x34" width="27" height="34" alt="Логотип разработчика">
           </a>
         </div>
       </footer>

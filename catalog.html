@@ -7,23 +7,23 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="http://placehold.it/85x35" width="85" height="35" alt="mishka">
+        <img src="http://placehold.it/85x35" width="85" height="35" alt="Логотип страницы">
       </div>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Поиск по сайту</a>
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -34,35 +34,45 @@
     </header>
     <section class="production">
       <figure class="production__item">
-        <img src="http://placehold.it/260x195" width="260" height="195">
-        <figcaption class="production__desc">Зайчик-попрыгайчик</figcaption>
-        <p class="production__param">Рост 30 см, вес 200 г</p>
-        <b class="production__price">1200 руб.</b>
-        <a class="basket-link" href="#">Корзина</a>
+        <img src="http://placehold.it/260x195" width="260" height="195" alt="Фотография товара">
+        <figcaption class="production__desc">
+          <b class="production__title">Зайчик-попрыгайчик</b>
+          <p class="production__param">Рост 30 см, вес 200 г</p>
+          <b class="production__price">1200 руб.</b>
+          <a class="basket-link" href="#">Корзина</a>
+        </figcaption>
       </figure>
       <figure class="production__item">
-        <img src="http://placehold.it/260x195" width="260" height="195">
-        <figcaption class="production__desc">Корзинка для белья</figcaption>
-        <p class="production__param">Диаметр 15 см, высота 10 см</p>
-        <b class="production__price">690 руб.</b>
-        <a class="basket-link" href="#">Корзина</a>
+        <img src="http://placehold.it/260x195" width="260" height="195" alt="Фотография товара">
+        <figcaption class="production__desc">
+          <b class="production__title">Корзинка для белья</b>
+          <p class="production__param">Диаметр 15 см, высота 10 см</p>
+          <b class="production__price">690 руб.</b>
+          <a class="basket-link" href="#">Корзина</a>
+        </figcaption>
       </figure>
       <figure class="production__item">
-        <img src="http://placehold.it/260x195" width="260" height="195">
-        <figcaption class="production__desc">Большая корзинка для игрушек</figcaption>
-        <p class="production__param">Диаметр 30 см, высота 30 см</p>
-        <b class="production__price">1500 руб.</b>
-        <a class="basket-link" href="#">Корзина</a>
+        <img src="http://placehold.it/260x195" width="260" height="195" alt="Фотография товара">
+        <figcaption class="production__desc">
+          <b class="production__title">Большая корзинка для игрушек</b>
+          <p class="production__param">Диаметр 30 см, высота 30 см</p>
+          <b class="production__price">1500 руб.</b>
+          <a class="basket-link" href="#">Корзина</a>
+        </figcaption>
       </figure>
     </section>
-    <section class="videoblog">
-      <video src="http://placehold.it/260x195" width="260" height="150"
-      poster="http://placehold.it/260x195"></video>
-      <p class="videoblog__text">
-        По просьбам наших любимых фолловеров мы сняли для вас подробное видео
-        о том, как появляются наши товары.
-      </p>
-      <a class="btn" href="#">Сделать заказ</a>
+    <section class="video-blog">
+      <figure class="video-blog__item">
+        <video src="http://placehold.it/260x195" width="260" height="150"
+        poster="http://placehold.it/260x195"></video>
+        <figcaption class="video-blog__desc">
+          <p class="video-blog__text">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео
+            о том, как появляются наши товары.
+          </p>
+          <a class="button" href="#">Сделать заказ</a>
+        </figcaption>
+      </figure>
     </section>
     <footer class="page-footer">
       <span class="social-links">
@@ -73,23 +83,23 @@
       <div class="page-footer__copyright">
         <b class="page-footer__text">Разработано:</b>
         <a class="page-footer__icon-link" href="https://htmlacademy.ru">
-          <img src="http://placehold.it/27x34" width="27" height="34" alt="html-logo">
+          <img src="http://placehold.it/27x34" width="27" height="34" alt="Логотип разработчика">
         </a>
       </div>
     </footer>
     <section class="basket-modal basket-modal--hidden">
-      <form action="https://echo.htmlacademy.ru/" method="post" class="basket-modal__form">
-        <h1 class="basket-modal__title">Добавить в корзину</h1>
+      <form class="basket-modal__form" action="https://echo.htmlacademy.ru/" method="post" >
+        <h2 class="basket-modal__title">Добавить в корзину</h2>
         <div class="product-size">
           <p class="product-size__text">Выберите размер</p>
-          <input type="radio" class="product-size__value" id="s" name="size" value="s">
-          <label for="s">S</label>
-          <input type="radio" class="product-size__value" id="m" name="size" value="m">
-          <label for="m">M</label>
-          <input type="radio" class="product-size__value" id="l" name="size" value="l">
-          <label for="l">L</label>
+          <input class="product-size__value" type="radio" id="s-product-size" name="size" value="s">
+          <label for="s-product-size">s</label>
+          <input class="product-size__value" type="radio" id="m-product-size" name="size" value="m">
+          <label for="m-product-size">m</label>
+          <input class="product-size__value" type="radio" id="l-product-size" name="size" value="l">
+          <label for="l-product-size">l</label>
         </div>
-        <button class="btn" type="submit">Добавить</button>
+        <button class="button" type="submit">Добавить</button>
       </form>
     </section>
   </body>
