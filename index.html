@@ -7,23 +7,23 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="http://placehold.it/85x35" width="85" height="35" alt="mishka">
+        <img src="http://placehold.it/85x35" width="85" height="35" alt="Логотип страницы">
       </div>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Поиск по сайту</a>
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -42,7 +42,7 @@
     </header>
     <section class="featured">
       <h2 class="fearued__item-name"> Вязаные корзинки </h2>
-      <b>Товар недели</b>
+      <h3>Товар недели</h3>
       <p class="featured__description">
         Экологически чистая пряжа, ручная работа.
         Доступны в шести расцветках, и трех размерах.
@@ -62,35 +62,36 @@
         </tr>
       </table>
       <div class="featured__image">
-        <img src="http://placehold.it/269x315" width="269" height="315"
-        alt="triple-set-mobile">
+        <img src="http://placehold.it/269x315" width="269" height="315" alt="Товар недели">
       </div>
       <b class="featured_price">Цена: 990 руб.</b>
-      <a class="btn" href="#">Заказать</a>
+      <a class="button" href="#">Заказать</a>
     </section>
     <section class="about">
       <h2 class="about__title"> Коротко о нас : </h2>
-      <div class="about__item">
-        <p class="about__text">Экологически чистые материалы </p>
-      </div>
-      <div class="about__item">
-        <p class="about__text">Скандинавский стиль по российской цене </p>
-      </div>
-      <div class="about__item">
-        <p class="about__text">Увеличивает лайки на фотографиях </p>
-      </div>
-      <div class="about__item">
-        <p class="about__text">Связано вручную с любовью и умилением</p>
-      </div>
-      <div class="about__item">
-        <p class="about__text">Поддержка отечественного производителя</p>
-      </div>
-      <div class="about__item">
-        <p class="about__text">Поставляется в подарочной упаковке</p>
-      </div>
+      <ul class="about__list">
+        <li class="about__item">
+          <p class="about__text">Экологически чистые материалы </p>
+        </li>
+        <li class="about__item">
+          <p class="about__text">Скандинавский стиль по российской цене </p>
+        </li>
+        <li class="about__item">
+          <p class="about__text">Увеличивает лайки на фотографиях </p>
+        </li>
+        <li class="about__item">
+          <p class="about__text">Связано вручную с любовью и умилением</p>
+        </li>
+        <li class="about__item">
+          <p class="about__text">Поддержка отечественного производителя</p>
+        </li>
+        <li class="about__item">
+          <p class="about__text">Поставляется в подарочной упаковке</p>
+        </li>
+      </ul>
     </section>
     <section class="reviews">
-      <h2 class="reviews__title"> Отзывы </h2>
+      <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__items">
         <blockquote class="reviews-item">
           <p class="reviews__text">
@@ -107,33 +108,23 @@
       </div>
       <button class="reviews__prev" type="button">Предыдущий отзыв</button>
       <button class="reviews__next" type="button">Следующий отзыв</button>
-      <a class="btn" href="#">Написать</a>
+      <a class="button" href="#">Написать</a>
     </section>
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
-      <table class="contacts-table">
-        <tr>
-          <td class="contacts-table__param">e-mail</td>
-          <td class="contacts-table__value">info@mimimishkashop.ru</td>
-        </tr>
-        <tr>
-          <td class="contacts-table__param">Адрес :</td>
-          <td class="contacts-table__value">
-            г. Санкт-Петербург,
-            ул. Большая Конюшенная,
-            д. 19/8, офис 101
-          </td>
-        </tr>
-      </table>
+      <div class="contacts__list">
+        <p class="contacts__text"><b class="contacts__name">e-mail:</b>info@mimimishkashop.ru</p>
+        <p class="contacts__text"><b class="contacts__name">Адрес:</b>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+      </div>
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.
+        <iframe class="map__editor" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.
         601111317681!2d30.320839015958146!3d59.938760881876206!2m3!1f0!2f0!3f0!3
         m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fc9ddd7b5%3A0x3b5582a5342a4e47
         !2z0JPQvdC10LfQtNC-!5e0!3m2!1sru!2sru!4v1488618529897"
         width="320" height="450" frameborder="0" style="border:0" allowfullscreen>
         </iframe>
       </div>
-      <a class="btn" href="#">Напишите нам</a>
+      <a class="button" href="#">Напишите нам</a>
     </section>
     <footer class="page-footer">
       <span class="social-links">
@@ -144,23 +135,23 @@
       <div class="page-footer__copyright">
         <b class="page-footer__text">Разработано:</b>
         <a class="page-footer__icon-link" href="https://htmlacademy.ru">
-          <img src="http://placehold.it/27x34" width="27" height="34" alt="html-logo">
+          <img src="http://placehold.it/27x34" width="27" height="34" alt="Логотип разработчика">
         </a>
       </div>
     </footer>
     <section class="basket-modal basket-modal--hidden">
-      <form action="https://echo.htmlacademy.ru/" method="post" class="basket-modal__form">
-        <h1 class="basket-modal__title">Добавить в корзину</h1>
+      <form class="basket-modal__form" action="https://echo.htmlacademy.ru/" method="post" >
+        <h2 class="basket-modal__title">Добавить в корзину</h2>
         <div class="product-size">
           <p class="product-size__text">Выберите размер</p>
-          <input type="radio" class="product-size__value" id="s" name="size" value="s">
-          <label for="s">S</label>
-          <input type="radio" class="product-size__value" id="m" name="size" value="m">
-          <label for="m">M</label>
-          <input type="radio" class="product-size__value" id="l" name="size" value="l">
-          <label for="l">L</label>
+          <input class="product-size__value" type="radio" id="s-product-size" name="size" value="s">
+          <label for="s-product-size">s</label>
+          <input class="product-size__value" type="radio" id="m-product-size" name="size" value="m">
+          <label for="m-product-size">m</label>
+          <input class="product-size__value" type="radio" id="l-product-size" name="size" value="l">
+          <label for="l-product-size">l</label>
         </div>
-        <button class="btn" type="submit">Добавить</button>
+        <button class="button" type="submit">Добавить</button>
       </form>
     </section>
   </body>
