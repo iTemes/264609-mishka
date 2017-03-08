@@ -1,0 +1,27 @@
+.button {
+  display: block;
+  padding: 20px 0px;
+  width: 270px; //Временно.
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: $main-font;
+  color: #444444;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  border: 2px solid #444444;
+}
+
+.button--add {
+  color: #ffffff;
+  background-color: #63d1bb;
+  border: none;
+}
+
+.button--form {
+  margin-bottom: 55px;
+  background-color: #ffffff;
+}

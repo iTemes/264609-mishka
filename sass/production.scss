@@ -1,0 +1,31 @@
+.production {
+
+}
+
+.production__item {
+  background-color: #e9e8e6;
+}
+
+.production__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: $main-font;
+  color: #000000;
+}
+
+.production__param {
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: normal;
+  font-family: $main-font;
+  color: #444444;
+}
+
+.production__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: $main-font;
+  color: #000000;
+}
