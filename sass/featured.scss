@@ -1,0 +1,34 @@
+.featured {
+  background-color: #ffffff;
+  outline: 2px solid #000000;
+}
+
+.featured__item-name {
+  @include titles;
+}
+
+.featured__topic {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: $main-font;
+  color: #63d1bb;
+}
+
+.featured__description {
+  font: $regular-font;
+  color: #444444;
+}
+
+.featured__table {
+  font: $regular-font;
+  color: #444444;
+}
+
+.featured_price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: $main-font;
+  color: #444444;
+}

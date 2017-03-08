@@ -1,0 +1,11 @@
+.basket-modal {
+  outline: 2px solid red;
+}
+
+.basket-modal__title {
+  @include titles;
+}
+
+.product-size__text {
+  font: $regular-font;
+}
