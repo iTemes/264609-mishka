@@ -1,13 +1,18 @@
 .featured {
+  @include container;
+  margin-top: 33px;
+
   background-color: #ffffff;
-  outline: 2px solid #000000;
 }
 
 .featured__item-name {
   @include titles;
+  margin: 0;
 }
 
 .featured__topic {
+  margin: 0;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
@@ -16,6 +21,9 @@
 }
 
 .featured__description {
+  margin: 0;
+  margin: 35px 0;
+
   font: $regular-font;
   color: #444444;
 }
@@ -25,10 +33,15 @@
   color: #444444;
 }
 
+.featured__param {
+  width: 100px;
+}
+
 .featured_price {
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   font-family: $main-font;
   color: #444444;
+  text-align: center;
 }
