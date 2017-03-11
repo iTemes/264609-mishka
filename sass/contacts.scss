@@ -1,5 +1,9 @@
 .contacts {
-  outline: 2px solid #000000;
+  margin-top: 94px;
+}
+
+.contacts__wrapper {
+  @include container;
 }
 
 .contacts__title {
@@ -11,9 +15,17 @@
 }
 
 .contacts__text {
+  display: inline-block;
+
   font: $regular-font;
 }
 
 .contacts__name {
+  width: 70px;
+
   font: $regular-font;
+}
+
+.contacts__adress {
+  display: block;
 }
