@@ -5,3 +5,17 @@
   font-family: $main-font;
   color: #000000;
 }
+
+@mixin container() {
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+      width: 668px;
+    }
+
+  @media (min-width: 1200px) {
+      width:960px;
+    }
+}
