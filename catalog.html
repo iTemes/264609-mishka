@@ -2,93 +2,120 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
     <title>Мишка : Каталог</title>
   </head>
   <body class="page">
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html">
-          <img src="img/logo-mobile.svg" width="85" height="35" alt="Логотип страницы">
-        </a>
-      </div>
-      <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
+      <div class="page-header__wrapper">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <div class="page-header__logo">
+              <a href="index.html">
+                <img src="img/logo-mobile.svg" width="85" height="35" alt="Логотип страницы">
+              </a>
+            </div>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper ">
+              <ul class="main-nav__list">
+                <li class="main-nav__item  main-nav__item--catalog">
+                  <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+                </li>
+                <li class="main-nav__item main-nav__item--order">
+                  <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link main-nav__link--search-icon" href="#"></a>
+                  <a class="main-nav__link main-nav__link--hidden" href="#">Поиск по сайту</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link main-nav__link--basket-icon" href="#"></a>
+                  <a class="main-nav__link main-nav__link--user" href="#">Корзина: пока пуста</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-      </nav>
-      <h1 class="page-header__title">
+      </header>
+    <section class="production">
+      <h1 class="page__title">
         Каталог товаров
       </h1>
-    </header>
-    <section class="production">
-      <figure class="production__item">
-        <img class="production__image" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Фотография товара">
-        <figcaption class="production__desc">
-          <b class="production__title">Зайчик-попрыгайчик</b>
-          <p class="production__param">Рост 30 см, вес 200 г</p>
-          <b class="production__price">1200 руб.</b>
-          <a class="basket-link" href="#">Корзина</a>
-        </figcaption>
-      </figure>
-      <figure class="production__item">
-        <img class="production__image" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Фотография товара">
-        <figcaption class="production__desc">
-          <b class="production__title">Корзинка для белья</b>
-          <p class="production__param">Диаметр 15 см, высота 10 см</p>
-          <b class="production__price">690 руб.</b>
-          <a class="basket-link" href="#">Корзина</a>
-        </figcaption>
-      </figure>
-      <figure class="production__item">
-        <img class="production__image" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Фотография товара">
-        <figcaption class="production__desc">
-          <b class="production__title">Большая корзинка для игрушек</b>
-          <p class="production__param">Диаметр 30 см, высота 30 см</p>
-          <b class="production__price">1500 руб.</b>
-          <a class="basket-link" href="#">Корзина</a>
-        </figcaption>
-      </figure>
+      <div class="production__wrapper">
+        <figure class="production__item">
+          <img class="production__image" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Фотография товара">
+          <figcaption class="production__desc">
+            <div class="production__size">
+              <b class="production__name">Зайчик-попрыгайчик</b>
+              <p class="production__param">Рост 30 см, вес 200 г</p>
+            </div>
+            <div class="production__order">
+              <b class="production__price">1200 руб.</b>
+              <a class="basket-link" href="#">Корзина</a>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="production__item">
+          <img class="production__image" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Фотография товара">
+          <figcaption class="production__desc">
+            <div class="production__size">
+              <b class="production__name">Корзинка для белья</b>
+              <p class="production__param">Диаметр 15 см, высота 10 см</p>
+            </div>
+            <div class="production__order">
+              <b class="production__price">690 руб.</b>
+              <a class="basket-link" href="#">Корзина</a>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="production__item">
+          <img class="production__image" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Фотография товара">
+          <figcaption class="production__desc">
+            <div class="production__size">
+              <b class="production__name">Большая корзинка для игрушек</b>
+              <p class="production__param">Диаметр 30 см, высота 30 см</p>
+            </div>
+            <div class="production__order">
+              <b class="production__price">1500 руб.</b>
+              <a class="basket-link" href="#">Корзина</a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
     </section>
     <section class="video-blog">
-      <figure class="video-blog__item">
-        <p class="production__title">Процесс производства</p>
-        <video class="video-blog__content" src="http://placehold.it/260x195" width="260" height="150"
-        poster="img/video-mobile@1x.jpg"></video>
-        <figcaption class="video-blog__desc">
-          <p class="video-blog__text">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео
-            о том, как появляются наши товары.
-          </p>
-          <a class="button" href="#">Сделать заказ</a>
-        </figcaption>
-      </figure>
+      <div class="video-blog__wrapper">
+        <figure class="video-blog__item">
+          <p class="production__name production__name--video">Процесс производства</p>
+          <video class="video-blog__content" src="http://placehold.it/260x195" width="260" height="150"
+          poster="img/video-mobile@1x.jpg"></video>
+          <figcaption class="video-blog__desc">
+            <p class="video-blog__text">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео
+              о том, как появляются наши товары.
+            </p>
+            <a class="button button--catalog-order" href="#">Сделать заказ</a>
+          </figcaption>
+        </figure>
+      </div>
     </section>
     <footer class="page-footer">
-      <span class="social-links">
-        <a class="social-links__item social-links__item--instagram" href="#">Мы в Инстаграме</a>
-        <a class="social-links__item social-links__item--facebook" href="#">Мы в Фейсбуке</a>
-        <a class="social-links__item social-links__item--twitter" href="#">Мы в Твиттере</a>
-      </span>
-      <div class="page-footer__copyright">
-        <b class="page-footer__text">Разработано:</b>
-        <a class="page-footer__icon-link" href="https://htmlacademy.ru">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип разработчика">
-        </a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-mobile.svg" width="102" height="34" alt="Логотип">
+        </div>
+        <span class="social-links">
+          <a class="social-links__item social-links__item--instagram" href="#">Мы в Инстаграме</a>
+          <a class="social-links__item social-links__item--facebook" href="#">Мы в Фейсбуке</a>
+          <a class="social-links__item social-links__item--twitter" href="#">Мы в Твиттере</a>
+        </span>
+        <div class="page-footer__copyright">
+          <b class="page-footer__text">Разработано:</b>
+          <a class="page-footer__icon-link" href="https://htmlacademy.ru">
+            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип разработчика">
+          </a>
+        </div>
       </div>
     </footer>
     <section class="basket-modal basket-modal--hidden">
@@ -106,5 +133,6 @@
         <button class="button button--add" type="submit">Добавить</button>
       </form>
     </section>
+    <script src="js/app.js"></script>
   </body>
 </html>

@@ -1,17 +1,28 @@
-.production {
-
+.production__wrapper {
+  @include container;
 }
 
 .production__item {
-  background-color: #e9e8e6;
+  margin: 0;
+  margin-bottom: 30px;
+
+  background-color: #ffffff;
 }
 
-.production__title {
+.production__desc {
+  padding-left: 30px;
+}
+
+.production__name {
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   font-family: $main-font;
   color: #000000;
+
+    &--video {
+      padding-left: 80px;
+    }
 }
 
 .production__param {
@@ -23,9 +34,61 @@
 }
 
 .production__price {
+  padding-right: 99px;
+
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
   font-family: $main-font;
   color: #000000;
+}
+
+@media (min-width: $tablet-widths) {
+  .production__item {
+    display: flex;
+    margin-bottom: 55px;
+  }
+
+  .production__image {
+    width: 50%;
+  }
+
+  .production__desc {
+    padding: 0;
+    width: 50%;
+  }
+
+  .production__size {
+    margin-top: 30px;
+    margin-bottom: 200px;
+    padding-left: 30px;
+  }
+  .production__order {
+    padding-left: 30px;
+  }
+
+  .production__price {
+    padding-right: 140px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .production__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .production__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .production__desc {
+    width: 100%;
+  }
+
+  .production__size {
+    margin: 0;
+  }
 }

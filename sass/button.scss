@@ -13,15 +13,31 @@
   text-align: center;
 
   border: 2px solid #444444;
+
+    &--add {
+      color: #ffffff;
+      background-color: #63d1bb;
+      border: none;
+    }
+
+    &--form {
+      width: 230px;
+      padding: 13px 0px;
+
+      margin-bottom: 55px;
+      background-color: #ffffff;
+    }
 }
 
-.button--add {
-  color: #ffffff;
-  background-color: #63d1bb;
-  border: none;
+@media (min-width: $tablet-widths) {
+  .button--catalog-order {
+    width: 584px;
+  }
 }
 
-.button--form {
-  margin-bottom: 55px;
-  background-color: #ffffff;
+@media (min-width: $desktop-widths) {
+  .button--catalog-order {
+    width: 230px;
+    margin-left: -207px;
+  }
 }

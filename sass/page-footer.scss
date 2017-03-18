@@ -1,6 +1,12 @@
 .page-footer {
   background-color: #f1f1f1;
+  width: 100%;
+
+}
+
+.page-footer__wrapper {
   @include container;
+  margin: 0 auto;
 }
 
 .page-footer__text {
@@ -9,4 +15,19 @@
   font-weight: bold;
   font-family: $main-font;
   color: #000000;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-widths) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }

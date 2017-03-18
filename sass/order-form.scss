@@ -1,5 +1,5 @@
-.order_form {
-
+.order-form {
+  @include container;
 }
 
 .order-form__text {
@@ -7,4 +7,21 @@
   line-height: 24px;
   font-weight: normal;
   font-family: $main-font;
+}
+
+@media (min-width: $tablet-widths) {
+  .order-form__submit {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .order-form__text {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
 }

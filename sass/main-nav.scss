@@ -1,18 +1,38 @@
 .main-nav {
+  position: relative;
+
+  width:100%;
+  min-height: 80px;
+  margin: 0 auto;
+
   background-color: #ffffff;
 }
 
-.main-nav__wrapper {
-  @include container;
-  height: 316px;
-}
-
-.main-nav--closed {
-
-}
-
 .main-nav__toggle {
+  position: absolute;
+  top: 25px;
+  right: 22px;
+  z-index: 100;
 
+  display: block;
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url(../img/icon-menu-open.svg);
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-image: url(../img/icon-menu-close.svg);
 }
 
 .main-nav__item {
@@ -24,12 +44,17 @@
 .main-nav__list  {
   margin: 0;
   padding: 0;
+  width: 100%;
 
   list-style: none;
+  background-color: #ffffff;
 }
 
 .main-nav__link {
-  padding: 20px;
+  display: block;
+  width: 220px;
+  margin: 0 auto;
+  padding: 28px;
 
   font-size: 17px;
   line-height: 24px;
@@ -37,4 +62,87 @@
   font-family: $main-font;
   text-decoration: none;
   color: #000000;
+  background-color: #ffffff;
+}
+
+.main-nav__link--search-icon,
+.main-nav__link--basket-icon {
+  display: none;
+}
+
+@media (max-width: 767px) {
+
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__user-items {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 80px;
+    right: 0;
+
+    width: 100%;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+
+    height: auto;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+
+}
+
+@media (min-width: $tablet-widths) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+    height: 170px;
+  }
+
+  .main-nav__wrapper {
+    width: 668px;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+
+    display: flex;
+  }
+
+  .main-nav__link {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .main-nav__link--user {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .main-nav__link--hidden {
+    display: none;
+  }
+
+  .main-nav__item--catalog,
+  .main-nav__item--order {
+    margin-top: 90px;
+    height: 20px;
+    width: 20%;
+    border-color: red;
+  }
 }

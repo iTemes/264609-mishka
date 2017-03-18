@@ -30,3 +30,40 @@
   margin: 0;
   padding-top: 70px;
 }
+
+@media (min-width: $tablet-widths) {
+  .about {
+    margin-top: 120px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .about {
+    width: 700px;
+    padding: 0;
+    margin: auto;
+    margin-top: 160px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

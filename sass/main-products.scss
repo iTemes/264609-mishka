@@ -1,10 +1,5 @@
-.main-products__categories {
-    width: auto;
-}
-
 .main-products__topic {
   padding: 30px;
-  min-height: 40px;
 }
 
 .main-products__link {
@@ -19,13 +14,28 @@
   text-decoration: none;
 }
 .main-products--interior {
-  display: block;
-
   background-color: #63d1bb;
 }
 
 .main-products--toys {
-  display: block;
-
   background-color: #56c3b2;
+}
+
+@media (min-width: $tablet-widths) {
+  .main-products {
+    @include container;
+    display: flex;
+
+  }
+
+  .main-products__topic {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .main-products {
+    @include container;
+  }
+
 }
