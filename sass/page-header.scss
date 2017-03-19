@@ -18,15 +18,17 @@
 
 @media (min-width: $tablet-widths) {
   .page-header {
-    @include container;
-    min-height: 170px;
+    min-height: 80px;
+    border-bottom: 2px solid #ececec;
   }
 
   .page-header__logo {
-    width: 50%;
+    width: 321px;
     margin: 0;
+
     text-align: left;
     align-self: flex-start;
+    order: 0;
   }
 }
 
