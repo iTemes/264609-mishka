@@ -10,26 +10,28 @@
     <header class="page-header">
       <div class="page-header__wrapper">
           <nav class="main-nav main-nav--closed main-nav--nojs">
-            <div class="page-header__logo">
-              <a href="index.html">
-                <img src="img/logo-mobile.svg" width="85" height="35" alt="Логотип Мишки">
-              </a>
-            </div>
             <button class="main-nav__toggle" type="button">Открыть меню</button>
             <div class="main-nav__wrapper ">
               <ul class="main-nav__list">
+                <div class="page-header__logo">
+                  <a href="index.html">
+                    <img src="img/logo-mobile.svg" width="85" height="35" alt="Логотип Мишки">
+                  </a>
+                </div>
                 <li class="main-nav__item  main-nav__item--catalog">
                   <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
                 </li>
                 <li class="main-nav__item main-nav__item--order">
                   <a class="main-nav__link" href="form.html">Вязание на заказ</a>
                 </li>
-                <li class="main-nav__item">
+                <li class="main-nav__item main-nav__item--delivery">
+                  <span class="main-nav__delivery" href="form.html">Бесплатная доставка по России</span>
+                </li>
+                <li class="main-nav__item main-nav__item--search">
                   <a class="main-nav__link main-nav__link--search-icon" href="#"></a>
                   <a class="main-nav__link main-nav__link--hidden" href="#">Поиск по сайту</a>
                 </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link main-nav__link--basket-icon" href="#"></a>
+                <li class="main-nav__item main-nav__item--user">
                   <a class="main-nav__link main-nav__link--user" href="#">Корзина: пока пуста</a>
                 </li>
               </ul>
