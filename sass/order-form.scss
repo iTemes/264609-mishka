@@ -10,6 +10,13 @@
 }
 
 @media (min-width: $tablet-widths) {
+  .order-form__text {
+    font-size: 17px;
+    line-height: 30px;
+
+    margin-bottom: 25px;
+  }
+
   .order-form__submit {
     display: flex;
     margin-top: 50px;
@@ -20,6 +27,7 @@
 
 @media (min-width: $desktop-widths) {
   .order-form__text {
+
     width: 700px;
     margin: 0 auto;
     margin-bottom: 50px;

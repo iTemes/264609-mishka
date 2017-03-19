@@ -24,11 +24,6 @@
     margin-bottom: 110px;
   }
 
-  .production__name {
-    width: 100%;
-    order: 2;
-  }
-
   .video-blog__content {
     width: 668px;
     order: 1;
@@ -46,25 +41,15 @@
 
 @media (min-width: $desktop-widths) {
   .video-blog__item {
-  flex-direction: row;
+    flex-direction: row;
   }
 
   .video-blog__content {
     width: 700px;
-    align-self: stretch;
   }
 
   .video-blog__desc {
     width: 350px;
-  }
-
-  .production__name {
-    width: 225px;
-    align-self: flex-start;
-  }
-
-  .production__name--video {
-    padding-top: 100px;
   }
 
   .video-blog__text {

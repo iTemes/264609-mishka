@@ -13,20 +13,19 @@
   text-align: center;
 
   border: 2px solid #444444;
+}
+.button--add {
+  color: #ffffff;
+  background-color: #63d1bb;
+  border: none;
+}
 
-    &--add {
-      color: #ffffff;
-      background-color: #63d1bb;
-      border: none;
-    }
+.button--form {
+  width: 230px;
+  padding: 13px 0px;
 
-    &--form {
-      width: 230px;
-      padding: 13px 0px;
-
-      margin-bottom: 55px;
-      background-color: #ffffff;
-    }
+  margin-bottom: 55px;
+  background-color: #ffffff;
 }
 
 @media (min-width: $tablet-widths) {
