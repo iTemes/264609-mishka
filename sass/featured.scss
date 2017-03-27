@@ -1,7 +1,10 @@
 .featured {
   @include container;
+  position: relative;
+
   width: 260px;
   margin-top: 33px;
+  padding-bottom: 130px;
 
   background-color: #ffffff;
 }
@@ -23,7 +26,7 @@
 
 .featured__description {
   margin: 0;
-  margin: 35px 0;
+  margin: 25px 0;
 
   font: $regular-font;
   color: #444444;
@@ -38,7 +41,7 @@
   width: 100px;
 }
 
-.featured_price {
+.featured__price {
   margin: 0 auto;
   margin-bottom: 30px;
 
@@ -48,7 +51,15 @@
   font-family: $main-font;
   color: #444444;
   text-align: center;
+}
 
+.featured__order {
+  position: absolute;
+  bottom: 0;
+}
+
+.featured__image {
+  margin-top: 40px;
 }
 
 @media (min-width: $tablet-widths) {
@@ -57,6 +68,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 55px;
+    padding-bottom: 60px;
   }
 
   .featured__titles {
@@ -84,16 +96,35 @@
 
   .featured__description {
     width: 280px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
-  .featured_price {
-    margin-top: 17px;
+  .featured__image {
+    margin-top: 55px;
+  }
+
+  .featured__order {
+    position: static;
+
+    margin-top: 70px;
+  }
+
+  .featured__price {
+    margin-left: 75px;
+    text-align: left;
+
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-widths) {
   .featured {
     margin-top: 130px;
+    padding-bottom: 100px;
   }
 
   .featured__item-name {
@@ -107,7 +138,6 @@
 
   .featured__item-name {
     order: 2;
-
   }
 
   .featured__topic {
@@ -120,7 +150,15 @@
     padding-left: 175px;
   }
 
+  .featured__description {
+    width: 290px;
+  }
+
   .featured__order {
-    padding-left: 175px;
+    margin-top: 115px;
+  }
+
+  .featured__image {
+    margin-top: 0px;
   }
 }

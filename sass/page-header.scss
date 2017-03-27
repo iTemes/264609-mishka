@@ -36,4 +36,10 @@
   .page-header {
     @include container;
   }
+
+  .page-header__logo {
+    width: 263px;
+
+    order:1;
+  }
 }

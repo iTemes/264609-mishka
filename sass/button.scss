@@ -28,9 +28,39 @@
   background-color: #ffffff;
 }
 
+.button__index--contacts {
+  position: absolute;
+  bottom: 0;
+
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
 @media (min-width: $tablet-widths) {
   .button--catalog-order {
     width: 584px;
+  }
+
+  .button__index--order {
+    width: 290px;
+  }
+
+  .button__index--review {
+    width: 166px;
+    order: 2;
+    align-self: baseline;
+    margin-top: 80px;
+  }
+
+  .button__index--contacts {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    width:235px;
+    margin-bottom: 55px;
   }
 }
 
@@ -38,5 +68,12 @@
   .button--catalog-order {
     width: 230px;
     margin-left: -207px;
+  }
+
+  .button__index--contacts {
+    position: static;
+
+    width:235px;
+    margin: 0;
   }
 }

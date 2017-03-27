@@ -19,10 +19,10 @@
                 </a>
               </div>
               <li class="main-nav__item  main-nav__item--catalog">
-                <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+                <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
               </li>
               <li class="main-nav__item main-nav__item--order">
-                <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+                <a class="main-nav__link main-nav__link--order" href="form.html">Вязание на заказ</a>
               </li>
               <li class="main-nav__item main-nav__item--delivery">
                 <span class="main-nav__delivery">Бесплатная доставка по России</span>
@@ -33,6 +33,12 @@
               </li>
               <li class="main-nav__item main-nav__item--user">
                 <a class="main-nav__link main-nav__link--user" href="#">Корзина: пока пуста</a>
+              </li>
+              <li class="main-nav__item main-nav__item--new">
+                <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a>
+              </li>
+              <li class="main-nav__item main-nav__item--sale">
+                <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a>
               </li>
             </ul>
           </div>
@@ -75,13 +81,13 @@
               <td class="featured__value">15 см</td>
             </tr>
           </table>
+          <div class="featured__order">
+            <p class="featured__price">Цена: 990 руб.</p>
+            <a class="button button__index--order" href="#">Заказать</a>
+          </div>
         </div>
         <div class="featured__image">
           <img src="img/triple-set-mobile@1x.jpg" width="269" height="315" alt="Товар недели">
-        </div>
-        <div class="featured__order">
-          <p class="featured_price">Цена: 990 руб.</p>
-          <a class="button" href="#">Заказать</a>
         </div>
       </section>
       <section class="about">
@@ -122,13 +128,13 @@
                 <b class="reviews__author-name">Анастасия Красильникова</b>
                 <cite class="reviews__author-social">@misssssiskras</cite>
               </div>
+              <div class="reviews__pagination">
+                <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+                <button class="reviews__next" type="button">Следующий отзыв</button>
+              </div>
             </blockquote>
           </div>
-          <div class="reviews__pagination">
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
-          </div>
-          <a class="button" href="#">Написать</a>
+          <a class="button button__index--review" href="#">Написать</a>
         </div>
       </section>
       <section class="contacts">
@@ -137,21 +143,19 @@
           <div class="contacts__list">
             <p class="contacts__text">
               <span class="contacts__name">e-mail:</span>
-              <a class="contacts__adress" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              <a class="contacts__mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </p>
             <p class="contacts__text">
               <span class="contacts__name">Адрес:</span>
-              <span class="contacts__adress contacts__adress--underline ">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+              <span class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
             </p>
+            <a class="button button__index--contacts" href="#">Напишите нам</a>
           </div>
         </div>
         <div class="map">
           <iframe class="map__editor" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.601111317681!2d30.320839015958146!3d59.938760881876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fc9ddd7b5%3A0x3b5582a5342a4e47!2z0JPQvdC10LfQtNC-!5e0!3m2!1sru!2sru!4v1488618529897"
             allowfullscreen>
           </iframe>
-        </div>
-        <div class="contacts__button">
-          <a class="button" href="#">Напишите нам</a>
         </div>
       </section>
       </main>
