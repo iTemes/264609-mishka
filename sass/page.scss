@@ -1,3 +1,53 @@
 .page {
+  min-width: 320px;
+  margin: 0;
+
   background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page__title {
+  @include titles;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 80px 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+@media (min-width: $tablet-widths) {
+  .page__title  {
+    margin-bottom: 80px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .page__title--order {
+    margin-bottom: 130px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

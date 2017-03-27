@@ -1,0 +1,41 @@
+.main-products__topic {
+  padding: 30px;
+}
+
+.main-products__link {
+  display: block;
+  width: 130px;
+
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: $main-font;
+  color: #ffffff;
+  text-decoration: none;
+}
+.main-products--interior {
+  background-color: #63d1bb;
+}
+
+.main-products--toys {
+  background-color: #56c3b2;
+}
+
+@media (min-width: $tablet-widths) {
+  .main-products {
+    @include container;
+    display: flex;
+
+  }
+
+  .main-products__topic {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .main-products {
+    @include container;
+  }
+
+}

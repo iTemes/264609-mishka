@@ -1,7 +1,61 @@
+.video-blog {
+  margin-top: 80px;
+}
+
+.video-blog__wrapper {
+  @include container;
+}
+
 .video-blog__text {
+  margin-bottom: 30px;
+
   font: $regular-font;
 }
 
 .video-blog__item {
+  margin: 0;
   margin-bottom: 55px;
+}
+
+@media (min-width: $tablet-widths) {
+  .video-blog__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 110px;
+  }
+
+  .video-blog__content {
+    width: 668px;
+    order: 1;
+  }
+
+  .video-blog__desc {
+    order: 3;
+    padding-left: 42px;
+  }
+
+  .video-blog__text {
+    width: 580px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .video-blog__item {
+    flex-direction: row;
+  }
+
+  .video-blog__content {
+    width: 700px;
+  }
+
+  .video-blog__desc {
+    width: 350px;
+  }
+
+  .video-blog__text {
+    width: 225px;
+    margin-top: 200px;
+    margin-left: -205px;
+  }
+
 }

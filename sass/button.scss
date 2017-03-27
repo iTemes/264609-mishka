@@ -1,7 +1,7 @@
 .button {
   display: block;
-  padding: 20px 0px;
-  width: 270px; //Временно.
+  padding: 14px 0px;
+  width: 256px; //Временно.
 
   font-size: 17px;
   line-height: 20px;
@@ -14,7 +14,6 @@
 
   border: 2px solid #444444;
 }
-
 .button--add {
   color: #ffffff;
   background-color: #63d1bb;
@@ -22,6 +21,22 @@
 }
 
 .button--form {
+  width: 230px;
+  padding: 13px 0px;
+
   margin-bottom: 55px;
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet-widths) {
+  .button--catalog-order {
+    width: 584px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .button--catalog-order {
+    width: 230px;
+    margin-left: -207px;
+  }
 }
