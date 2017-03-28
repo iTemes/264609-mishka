@@ -24,7 +24,8 @@ img {
   overflow: hidden;
 }
 
-.page__catalog-title {
+.page__catalog-title,
+.page__order--title {
   @include titles;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -35,7 +36,8 @@ img {
 }
 
 @media (min-width: $tablet-widths) {
-  .page__catalog-title  {
+  .page__catalog-title,
+  .page__order--title  {
     margin-bottom: 70px;
     padding: 94px 0;
 
@@ -45,7 +47,8 @@ img {
 }
 
 @media (min-width: $desktop-widths) {
-  .page__catalog-title {
+  .page__catalog-title,
+  .page__order--title {
     padding: 100px 0;
     margin-bottom: 120px;
 
@@ -53,10 +56,4 @@ img {
     line-height: 57px;
   }
 
-  .page__title--order {
-    margin-bottom: 130px;
-
-    font-size: 53px;
-    line-height: 57px;
-  }
 }

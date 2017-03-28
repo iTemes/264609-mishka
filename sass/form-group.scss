@@ -90,5 +90,7 @@
 }
 
 @media (min-width: $desktop-widths) {
-
+  .form-group__item--color {
+    width: 875px;
+  }
 }
