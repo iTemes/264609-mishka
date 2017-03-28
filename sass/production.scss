@@ -10,8 +10,9 @@
 }
 
 .production__desc {
-  margin-top: 30px;
-  padding-left: 30px;
+  margin-top: 25px;
+  margin-left: 30px;
+  padding-bottom: 30px;
 }
 
 .production__name {
@@ -25,10 +26,14 @@
 }
 
 .production__name--video {
-  padding-left: 80px;
+  padding-left: 90px;
+  margin-bottom: 25px;
 }
 
 .production__param {
+  margin-top: 10px;
+  margin-bottom: 32px;
+
   font-size: 13px;
   line-height: 30px;
   font-weight: normal;
@@ -54,6 +59,8 @@
 
   .production__name--video {
     order: 2;
+    padding-left: 105px;
+    margin-top: 40px;
   }
 
   .production__item {
@@ -66,20 +73,29 @@
   }
 
   .production__desc {
+    box-sizing: border-box;
     padding: 0;
+    margin: 0;
     width: 50%;
+
+    border: 2px solid #ececec;
   }
 
   .production__info {
-    margin-bottom: 200px;
+    margin-top: 30px;
+    margin-bottom: 184px;
     padding-left: 30px;
   }
   .production__order {
     padding-left: 30px;
+    padding-bottom: 30px;
   }
 
   .production__price {
     padding-right: 140px;
+
+    font-size: 17px;
+    line-height: 24px;
   }
 }
 
@@ -90,21 +106,47 @@
   }
 
   .production__name--video {
-    padding-top: 100px;
-    width: 225px;
+    position: absolute;
+    right: 115px;
+
+    padding: 0;
+    padding-top: 90px;
+    margin: 0;
+    width: 175px;
+
   }
 
   .production__item {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    width: 315px;
+  }
+
+  .production__image {
     width: 100%;
+    height: 462px;//временно для сетки
   }
 
   .production__desc {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
     width: 100%;
+    min-height: 200px;
+    padding-top: 25px;
+  }
+
+  .production__param {
+    margin: 0;
   }
 
   .production__info {
     margin: 0;
+    width: 100%;
+  }
+
+  .production__order {
+    width: 100%;
   }
 }
