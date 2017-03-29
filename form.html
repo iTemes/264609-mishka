@@ -58,79 +58,84 @@
           <div class="form-group__wrapper">
             <legend class="form-group__title form-group__title--type">Тип</legend>
             <div class="form-group__item">
-              <label class="form-group__caption" for="decor-type">
+              <div class="form-group__option">
                 <input type="radio" id="decor-type" name="product-type" value="interior-accessory" checked>
-                  Аксессуары для интерьера
-                </label>
-              <label class="form-group__caption" for="toys-type">
+                <label class="form-group__caption form-group__caption--accessory" for="decor-type">Аксессуары для интерьера</label>
+              </div>
+              <div class="form-group__option">
                 <input type="radio" id="toys-type" name="product-type" value="child-toys">
-                  Детские игрушки
-              </label>
+                <label class="form-group__caption" for="toys-type">Детские игрушки</label>
+              </div>
             </div>
           </div>
         </fieldset>
-        <fieldset class="form-group">
+        <fieldset class="form-group form-group--color">
           <div class="form-group__wrapper">
             <legend class="form-group__title form-group__title--color">Цвет</legend>
             <div class="form-group__item form-group__item--color">
-              <label class="form-group__caption form-group__caption--color" for="order-white-color">
-                <input type="checkbox" id="order-white-color" name="white-color" checked>Белый
-              </label>
-              <label class="form-group__caption form-group__caption--color" for="order-gray-color">
-                <input type="checkbox" id="order-gray-color" name="gray-color" checked>Серый
-              </label>
-              <label class="form-group__caption form-group__caption--color" for="order-tif-color">
-                <input type="checkbox" id="order-tif-color" name="tif-color">"Тиффани"
-              </label>
-              <label class="form-group__caption form-group__caption--color" for="order-black-color">
-                <input type="checkbox" id="order-black-color" name="black-color">Черный
-              </label>
-              <label class="form-group__caption form-group__caption--color" for="order-pink-color">
-                <input type="checkbox" id="order-pink-color" name="pink-color">Розовый
-              </label>
-              <label class="form-group__caption form-group__caption--color" for="order-orange-color">
-                <input type="checkbox" id="order-orange-color" name="orange-color">Оранжевый
-              </label>
+              <div class="form-group__option">
+                <input type="checkbox" id="order-white-color" name="white-color" checked>
+                <label class="form-group__caption form-group__caption--color" for="order-white-color">Белый</label>
+              </div>
+              <div class="form-group__option">
+                <input type="checkbox" id="order-gray-color" name="gray-color" checked>
+                <label class="form-group__caption form-group__caption--color" for="order-gray-color">Серый</label>
+              </div>
+              <div class="form-group__option">
+                <input type="checkbox" id="order-tif-color" name="tif-color">
+                <label class="form-group__caption form-group__caption--color" for="order-tif-color">"Тиффани"</label>
+              </div>
+              <div class="form-group__option">
+                <input type="checkbox" id="order-black-color" name="black-color">
+                <label class="form-group__caption form-group__caption--color" for="order-black-color">Черный</label>
+              </div>
+              <div class="form-group__option">
+                <input type="checkbox" id="order-pink-color" name="pink-color">
+                <label class="form-group__caption form-group__caption--color" for="order-pink-color">Розовый</label>
+              </div>
+              <div class="form-group__option">
+                <input type="checkbox" id="order-orange-color" name="orange-color">
+                <label class="form-group__caption form-group__caption--color" for="order-orange-color">Оранжевый</label>
+              </div>
             </div>
           </div>
         </fieldset>
-        <fieldset class="form-group">
+        <fieldset class="form-group form-group--info">
           <div class="form-group__wrapper">
             <legend class="form-group__title form-group__title--info">фио</legend>
             <div class="form-group__item form-group__item--info">
-              <label class="form-group__caption form-group__caption--info" for="order-name">Имя:
+              <div class="form-group__option form-group__option--info">
+                <label class="form-group__caption form-group__caption--info" for="order-name">Имя:</label>
                 <input type="text" id="order-name" name="name" placeholder="Введите ваше имя*" required>
-              </label>
-              <label class="form-group__caption form-group__caption--info" for="order-surname">Фамилия:
+              </div>
+              <div class="form-group__option form-group__option--info">
+                <label class="form-group__caption form-group__caption--info" for="order-surname">Фамилия:</label>
                 <input type="text" id="order-surname" name="surname" placeholder="Укажите фамилию*" required>
-              </label>
-              <label class="form-group__caption form-group__caption--info" for="order-patronymic">Отчество:
+              </div>
+              <div class="form-group__option form-group__option--info">
+                <label class="form-group__caption form-group__caption--info" for="order-patronymic">Отчество:</label>
                 <input type="text" id="order-patronymic" name="patronymic" placeholder="Отчество, если желаете">
-              </label>
+              </div>
             </div>
           </div>
         </fieldset>
-        <div class="form-group">
-          <div class="form-group__wrapper">
-            <label class="form-group__title" for="order-phone">тел</label>
-            <div class="form-group__item">
+        <div class="form-group form-group--order">
+          <div class="form-group__wrapper form-group__wrapper--order">
+            <div class="form-group__item form-group__item--phone">
+              <label class="form-group__title form-group__title--order" for="order-phone">тел</label>
               <input type="tel" id="order-phone" name="phone" placeholder="+7 XXX XXX XX XX*" required>
             </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-group__wrapper">
-            <label class="form-group__title" for="order-mail">e-mail</label>
-            <div class="form-group__item">
+            <div class="form-group__item form-group__item--email">
+              <label class="form-group__title form-group__title--order" for="order-mail">e-mail</label>
               <input type="email" id="order-mail" name="mail" placeholder="Ваш Email*" required>
             </div>
           </div>
         </div>
         <div class="form-group">
           <div class="form-group__wrapper">
-            <label class="form-group__title" for="order-additional">доп</label>
-            <div class="form-group__item">
-              <textarea id="order-additional" name="additional" rows="10"></textarea>
+            <label class="form-group__title form-group__title--additional" for="order-additional">доп</label>
+            <div class="form-group__item form-group__item--additional">
+              <textarea id="order-additional" name="additional" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
         </div>
