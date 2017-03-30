@@ -1,10 +1,8 @@
-.main-products__topic {
-  padding: 30px;
-}
-
 .main-products__link {
   display: block;
-  width: 130px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px;
 
   font-size: 19px;
   line-height: 24px;
@@ -13,11 +11,11 @@
   color: #ffffff;
   text-decoration: none;
 }
-.main-products--interior {
+.main-products__link--interior {
   background-color: #63d1bb;
 }
 
-.main-products--toys {
+.main-products__link--toys {
   background-color: #56c3b2;
 }
 
@@ -28,8 +26,12 @@
 
   }
 
-  .main-products__topic {
+  .main-products__link {
     width: 50%;
+    padding: 35px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

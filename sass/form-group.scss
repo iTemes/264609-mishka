@@ -122,7 +122,7 @@ input[type="checkbox"] + .form-group__caption::after {
 
   border-radius: 0;
   background-color: transparent;
-  background-image: url(../img/check.png);
+  background-image: url(../img/icon-tick.svg);
   background-size: calc(70%);
   background-repeat: no-repeat;
 
@@ -138,13 +138,29 @@ input[type="text"],
 input[type="tel"],
 input[type="email"] {
   display: block;
-  padding: 20px 0;
+  padding: 15px 0;
   width: 100%;
 
   border: none;
   border-bottom: 2px solid #000000;
   outline: none;
   background-color: transparent;
+}
+
+input {
+  font-size: 19px;
+  line-height: 18px;
+  font: $main-font;
+
+  color: #444444;
+}
+
+input:hover {
+  border-color: #62d1ba;
+}
+
+input:focus {
+  border-color: #62d1ba;
 }
 
 textarea {
@@ -160,6 +176,14 @@ textarea {
   font: $regular-font;
   border: 2px solid #000000;
   outline: none;
+}
+
+textarea:hover {
+  border-color: #62d1ba;
+}
+
+textarea:focus {
+  border-color: #62d1ba;
 }
 
 @media (min-width: $tablet-widths) {

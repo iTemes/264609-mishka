@@ -25,6 +25,14 @@
   color: #000000;
 }
 
+.production__name:hover {
+  color: #8d8d8d;
+}
+
+.production__name:active {
+  color: #d5d5d5;
+}
+
 .production__name--video {
   padding-left: 90px;
   margin-bottom: 25px;

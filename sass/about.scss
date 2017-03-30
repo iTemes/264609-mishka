@@ -24,6 +24,8 @@
 
 .about__item {
   margin-bottom: 30px;
+
+  background-repeat: no-repeat;
 }
 
 .about__text {
@@ -31,34 +33,29 @@
   padding-top: 60px;
 }
 
-.about__item:nth-child(1) {
+.about__item--materials {
   background-image: url(../img/icon-feature-1.svg);
-  background-repeat: no-repeat;
 }
 
-.about__item:nth-child(2) {
+.about__item--style {
   background-image: url(../img/icon-feature-2.svg);
-  background-repeat: no-repeat;
+
 }
 
-.about__item:nth-child(3) {
+.about__item--media {
   background-image: url(../img/icon-feature-3.svg);
-  background-repeat: no-repeat;
 }
 
-.about__item:nth-child(4) {
+.about__item--knitting {
   background-image: url(../img/icon-feature-4.svg);
-  background-repeat: no-repeat;
 }
 
-.about__item:nth-child(5) {
+.about__item--help {
   background-image: url(../img/icon-feature-5.svg);
-  background-repeat: no-repeat;
 }
 
-.about__item:nth-child(6) {
+.about__item--present {
   background-image: url(../img/icon-feature-6.svg);
-  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-widths) {

@@ -44,6 +44,20 @@
   color: #000000;
 }
 
+.contacts__mail {
+  width: 180px;
+  border-bottom: 2px solid #62d1ba;
+}
+
+.contacts__mail:hover {
+  color: #62d1ba;
+}
+
+.contacts__mail:focus {
+  color: #d9f0eb;
+  border-color: #d9f0eb;
+}
+
 @media (min-width: $tablet-widths) {
   .contacts {
     margin-top: 65px;
@@ -67,6 +81,10 @@
 
   .contacts__adress {
     width: 220px;
+  }
+
+  .contacts__mail {
+    width: 210px;
   }
 }
 
