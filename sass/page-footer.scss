@@ -10,6 +10,8 @@
 }
 
 .page-footer__text {
+  padding-right: 30px;
+
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
@@ -17,86 +19,55 @@
   color: #000000;
 }
 
-.social-links {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 15px 0;
-
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.social-links__item {
-  position: relative;
-
-  display: block;
-  width: 50px;
-  height: 50px;
-
-  font-size: 0;
-}
-
-.social-links__item--instagram::before {
-  position: absolute;
-  content: "";
-  top: 14px;
-  left: 14px;
-
-  width: 22px;
-  height: 22px;
-
-  background-image: url(../img/icon-insta.svg);
-  background-repeat: no-repeat;
-}
-
-.social-links__item--facebook::before {
-  position: absolute;
-  content: "";
-  top: 12px;
-  left: 18px;
-
-  width: 15px;
-  height: 27px;
-
-  background-image: url(../img/icon-fb.svg);
-  background-repeat: no-repeat;
-}
-
-.social-links__item--twitter::before {
-  position: absolute;
-  content: "";
-  top: 15px;
-  left: 15px;
-
-  width: 24px;
-  height: 20px;
-
-  background-image: url(../img/icon-twitter.svg);
-  background-repeat: no-repeat;
-}
-
 .page-footer__copyright {
-  margin: 30px 0;
-  text-align: center;
+  position: relative;
+  display: flex;
+
+  margin: 0;
+  margin-top: 25px;
+  padding-bottom: 17px;
+  margin-left: 38px;
 }
 
 .page-footer__logo {
   display: none;
 }
 
+.page-footer__icon-link {
+  position: absolute;
+  right: 32px;
+  top: -9px;
+
+  width: 43px;
+  height: 35px;
+
+  display: block;
+}
+
+.page-footer__developer-logo {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: $tablet-widths) {
   .page-footer__logo {
     display: block;
-    padding-right: 118px;
-  }
-
-  .social-links {
-    width: 230px;
+    width: 144px;
+    height: 41px;
+    padding-right: 95px;
   }
 
   .page-footer__copyright {
     width: 220px;
     margin: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+
+    text-align: left;
+  }
+
+  .page-footer__icon-link {
+    right: -14px;
   }
 
   .page-footer__wrapper {
@@ -104,5 +75,18 @@
     justify-content: space-between;
     align-items: center;
     min-height: 143px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .page-footer__logo {
+    display: block;
+    width: 115px;
+    height: 41px;
+    padding-right: 135px;
+  }
+
+  .page-footer__text {
+    margin-left: 42px;
   }
 }

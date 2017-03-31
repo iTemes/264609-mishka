@@ -44,12 +44,18 @@
 
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
+}
+
+.button--catalog-order {
+  width: 188px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-widths) {
   .button--catalog-order {
-    width: 580px;
+    margin: 0;
+    width: 581px;
   }
 
   .button__index--order {
@@ -69,7 +75,7 @@
     bottom: 0;
     right: 0;
 
-    width:235px;
+    width:226px;
     margin-bottom: 55px;
   }
 
@@ -87,11 +93,16 @@
   .button__index--contacts {
     position: static;
 
-    width:235px;
+    width:232px;
     margin: 0;
   }
 
   .button--form {
     margin-left: 175px;
+  }
+
+  .button__index--review {
+    width: 170px;
+    margin-top: 78px;
   }
 }

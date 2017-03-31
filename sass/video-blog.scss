@@ -1,47 +1,63 @@
 .video-blog {
-  margin-top: 80px;
+  margin-top: 25px;
+  padding-bottom: 67px;
 }
 
 .video-blog__wrapper {
   @include container;
 }
 
+.video-blog__desc {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ececec;
+}
 .video-blog__text {
-  margin-bottom: 30px;
+  margin-top: 19px;
+  margin-bottom: 26px;
+  padding-left: 34px;
+  width: 185px;
 
-  font: $regular-font;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .video-blog__item {
   margin: 0;
   margin-bottom: 55px;
+
 }
 
 @media (min-width: $tablet-widths) {
   .video-blog {
     margin: 0;
+    padding-bottom: 90px;
   }
 
   .video-blog__item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 110px;
+    margin: 0;
   }
 
   .video-blog__content {
+    margin-top: 10px;
     width: 668px;
+    height: 455px; //временно
     order: 1;
   }
 
   .video-blog__desc {
     order: 3;
-    padding-left: 42px;
+    padding-left: 41px;
   }
 
   .video-blog__text {
+    padding: 0;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     width: 580px;
+
+    font: $regular-font;
   }
 }
 

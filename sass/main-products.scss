@@ -2,7 +2,8 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 30px;
+  padding: 27px;
+  padding-left: 30px;
 
   font-size: 19px;
   line-height: 24px;
@@ -23,12 +24,13 @@
   .main-products {
     @include container;
     display: flex;
-
   }
 
   .main-products__link {
     width: 50%;
-    padding: 35px;
+    padding-left: 39px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 
     font-size: 20px;
     line-height: 30px;
@@ -36,8 +38,8 @@
 }
 
 @media (min-width: $desktop-widths) {
-  .main-products {
-    @include container;
+  .main-products__link {
+    padding-top: 28px;
+    padding-bottom: 13px;
   }
-
 }
