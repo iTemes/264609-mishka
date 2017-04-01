@@ -23,7 +23,7 @@
 
   .page-header {
     height: 90px;
-    border-bottom: 2px solid #ececec;
+    border-bottom: 1px solid #ececec;
   }
 
   .page-header__logo {
@@ -38,7 +38,7 @@
 
 @media (min-width: $desktop-widths) {
   .page-header {
-    @include container;
+    // @include container;
   }
 
   .page-header__logo {

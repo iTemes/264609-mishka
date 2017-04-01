@@ -104,20 +104,15 @@
   margin-bottom: 38px;
 }
 
-.form-group__option input[type="radio"],
-.form-group__option input[type="checkbox"] {
-  display: none;
-}
-
-input[type="radio"] + .form-group__caption,
-input[type="checkbox"] + .form-group__caption {
+.form-group__input--checkbox + .form-group__caption,
+.form-group__input--radio + .form-group__caption {
   position: relative;
 
   cursor: pointer;
 }
 
-input[type="radio"] + .form-group__caption::before,
-input[type="checkbox"] + .form-group__caption::before {
+.form-group__input--checkbox + .form-group__caption::before,
+.form-group__input--radio + .form-group__caption::before {
   position: absolute;
   left: 0;
   top: 0;
@@ -130,23 +125,23 @@ input[type="checkbox"] + .form-group__caption::before {
   border: 2px solid #444444;
 }
 
-input[type="radio"] + .form-group__caption:hover::before,
-input[type="checkbox"] + .form-group__caption:hover::before {
+.form-group__input--checkbox + .form-group__caption:hover::before,
+.form-group__input--radio + .form-group__caption:hover::before {
   border: 2px solid #62d1ba;
 }
 
-input[type="radio"] + .form-group__caption:active::before,
-input[type="checkbox"] + .form-group__caption:active::before {
+.form-group__input--checkbox + .form-group__caption:active::before,
+.form-group__input--radio + .form-group__caption:active::before {
   border: 2px solid #e1e1e1;
 }
 
-input[type="radio"] + .form-group__caption::before {
+.form-group__input--radio + .form-group__caption::before {
   border-radius: 50%;
   border: 2px solid #444444;
 }
 
-input[type="radio"] + .form-group__caption::after,
-input[type="checkbox"] + .form-group__caption::after {
+.form-group__input--radio + .form-group__caption::after,
+.form-group__input--checkbox + .form-group__caption::after {
   position: absolute;
   left: 11px;
   top: 11px;
@@ -160,7 +155,7 @@ input[type="checkbox"] + .form-group__caption::after {
   display: none;
 }
 
-input[type="checkbox"] + .form-group__caption::after {
+.form-group__input--checkbox + .form-group__caption::after {
   left: 8px;
   top: 12px;
 
@@ -176,14 +171,14 @@ input[type="checkbox"] + .form-group__caption::after {
   display: none;
 }
 
-input[type="radio"]:checked + .form-group__caption::after,
-input[type="checkbox"]:checked + .form-group__caption::after {
+.form-group__input--radio:checked + .form-group__caption::after,
+.form-group__input--checkbox:checked + .form-group__caption::after {
   display: block;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
+.form-group__input--text,
+.form-group__input--phone,
+.form-group__input--mail {
   display: block;
   padding: 15px 0;
   width: 100%;
@@ -194,7 +189,7 @@ input[type="email"] {
   background-color: transparent;
 }
 
-input {
+.form-group__input {
   font-size: 19px;
   line-height: 18px;
   font: $main-font;
@@ -202,15 +197,15 @@ input {
   color: #444444;
 }
 
-input:hover {
+.form-group__input:hover {
   border-color: #62d1ba;
 }
 
-input:focus {
+.form-group__input:focus {
   border-color: #62d1ba;
 }
 
-textarea {
+.form-group__textarea {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -224,11 +219,11 @@ textarea {
   outline: none;
 }
 
-textarea:hover {
+.form-group__textarea:hover {
   border-color: #62d1ba;
 }
 
-textarea:focus {
+.form-group__textarea:focus {
   border-color: #62d1ba;
 }
 
@@ -347,18 +342,18 @@ textarea:focus {
     line-height: 30px;
   }
 
-  input[type="tel"],
-  input[type="email"] {
+  .form-group__input--phone,
+  .form-group__input--mail {
     width: 501px;
   }
 
-  input[type="radio"] + .form-group__caption::before,
-  input[type="checkbox"] + .form-group__caption::before {
+  .form-group__input--checkbox + .form-group__caption::before,
+  .form-group__input--radio + .form-group__caption::before {
     width: 46px;
     height: 46px;
   }
 
-  input[type="radio"] + .form-group__caption::after {
+  .form-group__input--radio + .form-group__caption::after {
     top: 14px;
     left: 14px;
 
@@ -366,7 +361,7 @@ textarea:focus {
     height: 22px;
   }
 
-  input[type="checkbox"] + .form-group__caption::after {
+  .form-group__input--checkbox + .form-group__caption::after {
     background-size: calc(100%);
   }
 
@@ -379,7 +374,7 @@ textarea:focus {
     margin-top: 55px;
   }
 
-  textarea {
+  .form-group__textarea {
     margin: 0;
     padding-top: 10px;
   }
@@ -401,8 +396,8 @@ textarea:focus {
   }
 
   .form-group__item,
-  input[type="tel"],
-  input[type="email"] {
+  .form-group__input--phone,
+  .form-group__input--mail {
     width: 700px;
   }
 

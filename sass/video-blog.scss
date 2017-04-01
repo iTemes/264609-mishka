@@ -80,8 +80,12 @@
     box-sizing: border-box;
     padding: 0;
     padding-left: 60px;
-    margin-top: 178px;
+    padding-top: 178px;
     width: 350px;
+
+    border-top: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
   }
 
   .video-blog__text {
