@@ -14,6 +14,16 @@
 
   border: 2px solid #444444;
 }
+
+.button:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.button:active {
+  color: #8d8d8d;
+}
+
 .button--add {
   color: #ffffff;
   background-color: #63d1bb;
@@ -21,22 +31,78 @@
 }
 
 .button--form {
-  width: 230px;
+  width: 100%;
   padding: 13px 0px;
 
   margin-bottom: 55px;
   background-color: #ffffff;
 }
 
+.button__index--contacts {
+  position: absolute;
+  bottom: 0;
+
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 43px;
+}
+
+.button--catalog-order {
+  width: 188px;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-widths) {
   .button--catalog-order {
-    width: 584px;
+    margin: 0;
+    width: 581px;
+  }
+
+  .button__index--order {
+    width: 290px;
+  }
+
+  .button__index--review {
+    width: 166px;
+    order: 2;
+    align-self: baseline;
+    margin-top: 80px;
+  }
+
+  .button__index--contacts {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    width:226px;
+    margin-bottom: 55px;
+  }
+
+  .button--form {
+    width: 230px;
   }
 }
 
 @media (min-width: $desktop-widths) {
   .button--catalog-order {
     width: 230px;
-    margin-left: -207px;
+    margin-bottom: 60px;
+  }
+
+  .button__index--contacts {
+    position: static;
+
+    width:232px;
+    margin: 0;
+  }
+
+  .button--form {
+    margin-left: 175px;
+  }
+
+  .button__index--review {
+    width: 170px;
+    margin-top: 78px;
   }
 }

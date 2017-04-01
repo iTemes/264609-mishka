@@ -10,29 +10,35 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper ">
             <ul class="main-nav__list">
-              <div class="page-header__logo">
+              <li class="page-header__logo">
                 <a href="index.html">
                   <img src="img/logo-mobile.svg" width="85" height="35" alt="Логотип Мишки">
                 </a>
-              </div>
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
+              </li>
               <li class="main-nav__item  main-nav__item--catalog">
-                <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+                <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
               </li>
               <li class="main-nav__item main-nav__item--order">
-                <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+                <a class="main-nav__link main-nav__link--order" href="form.html">Вязание на заказ</a>
               </li>
               <li class="main-nav__item main-nav__item--delivery">
                 <span class="main-nav__delivery">Бесплатная доставка по России</span>
               </li>
               <li class="main-nav__item main-nav__item--search">
                 <a class="main-nav__link main-nav__link--search-icon" href="#"></a>
-                <a class="main-nav__link main-nav__link--hidden" href="#">Поиск по сайту</a>
+                <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
               </li>
               <li class="main-nav__item main-nav__item--user">
                 <a class="main-nav__link main-nav__link--user" href="#">Корзина: пока пуста</a>
+              </li>
+              <li class="main-nav__item main-nav__item--new">
+                <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a>
+              </li>
+              <li class="main-nav__item main-nav__item--sale">
+                <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a>
               </li>
             </ul>
           </div>
@@ -41,15 +47,11 @@
     </header>
     <main class="page-main">
       <h1 class="page-main__title">
-        Милые штуки ручной работы для дома
+        Милые штуки ручной<br>работы для дома
       </h1>
       <section class="main-products">
-        <div class="main-products__topic main-products--interior">
-          <a class="main-products__link" href="#">Предметы интерьера</a>
-        </div>
-        <div class="main-products__topic main-products--toys">
-          <a class="main-products__link" href="#">Детские игрушки</a>
-        </div>
+          <a class="main-products__link main-products__link--interior" href="#">Предметы<br>интерьера</a>
+          <a class="main-products__link main-products__link--toys" href="#">Детские<br>игрушки</a>
       </section>
       <section class="featured">
         <div class="featured__titles">
@@ -75,34 +77,34 @@
               <td class="featured__value">15 см</td>
             </tr>
           </table>
+          <div class="featured__order">
+            <p class="featured__price">Цена: 990 руб.</p>
+            <a class="button button__index--order" href="#">Заказать</a>
+          </div>
         </div>
         <div class="featured__image">
           <img src="img/triple-set-mobile@1x.jpg" width="269" height="315" alt="Товар недели">
-        </div>
-        <div class="featured__order">
-          <p class="featured_price">Цена: 990 руб.</p>
-          <a class="button" href="#">Заказать</a>
         </div>
       </section>
       <section class="about">
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
-          <li class="about__item">
+          <li class="about__item about__item--materials">
             <p class="about__text">Экологически чистые материалы</p>
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--style">
             <p class="about__text">Скандинавский стиль по российской цене</p>
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--media">
             <p class="about__text">Увеличивает лайки на фотографиях</p>
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--knitting">
             <p class="about__text">Связано вручную с любовью и умилением</p>
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--help">
             <p class="about__text">Поддержка отечественного производителя</p>
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--present">
             <p class="about__text">Поставляется в подарочной упаковке</p>
           </li>
         </ul>
@@ -122,36 +124,34 @@
                 <b class="reviews__author-name">Анастасия Красильникова</b>
                 <cite class="reviews__author-social">@misssssiskras</cite>
               </div>
+              <div class="reviews__pagination">
+                <button class="reviews__button reviews__button--prev" type="button">Предыдущий отзыв</button>
+                <button class="reviews__button reviews__button--next" type="button">Следующий отзыв</button>
+              </div>
             </blockquote>
           </div>
-          <div class="reviews__pagination">
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
-          </div>
-          <a class="button" href="#">Написать</a>
+          <a class="button button__index--review" href="#">Написать</a>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__list">
-            <p class="contacts__text">
+            <p class="contacts__text contacts__text--email">
               <span class="contacts__name">e-mail:</span>
-              <a class="contacts__adress" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              <a class="contacts__mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </p>
-            <p class="contacts__text">
+            <p class="contacts__text contacts__text--adress">
               <span class="contacts__name">Адрес:</span>
-              <span class="contacts__adress contacts__adress--underline ">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+              <span class="contacts__adress">г. Санкт-Петербург,<br>ул. Большая Конюшенная, д. 19/8, офис 101</span>
             </p>
+            <a class="button button__index--contacts" href="#">Напишите нам</a>
           </div>
         </div>
         <div class="map">
           <iframe class="map__editor" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.601111317681!2d30.320839015958146!3d59.938760881876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fc9ddd7b5%3A0x3b5582a5342a4e47!2z0JPQvdC10LfQtNC-!5e0!3m2!1sru!2sru!4v1488618529897"
             allowfullscreen>
           </iframe>
-        </div>
-        <div class="contacts__button">
-          <a class="button" href="#">Напишите нам</a>
         </div>
       </section>
       </main>
@@ -164,9 +164,9 @@
             <a class="social-links__item social-links__item--twitter" href="#">Мы в Твиттере</a>
           </p>
           <p class="page-footer__copyright">
-            <b class="page-footer__text">Разработано:</b>
+            <b class="page-footer__text">Разработано</b>
             <a class="page-footer__icon-link" href="https://htmlacademy.ru">
-              <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
+              <img class="page-footer__developer-logo" src="img/htmlacademy.svg" width="30" height="35" alt="Логотип HTML Академии">
             </a>
           </p>
         </div>

@@ -1,5 +1,7 @@
 .contacts {
-  margin-top: 94px;
+  position: relative;
+  padding-bottom: 130px;
+  margin-top: 45px;
 }
 
 .contacts__wrapper {
@@ -7,6 +9,9 @@
 }
 
 .contacts__title {
+  margin: 0;
+  margin-bottom: 23px;
+
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -19,6 +24,8 @@
   flex-wrap: wrap;
   align-items: flex-start;
   width: 100%;
+  margin: 0;
+  margin-bottom: 30px;
 
   font: $regular-font;
 }
@@ -28,8 +35,10 @@
   padding-right: 10px;
 
   font: $regular-font;
+  text-transform: lowercase;
 }
 
+.contacts__mail,
 .contacts__adress {
   display: block;
   width: 142px;
@@ -38,19 +47,24 @@
   color: #000000;
 }
 
-.contacts__button {
-  width: 260px;
-  margin: 40px auto;
+.contacts__mail {
+  width: 180px;
+  border-bottom: 2px solid #62d1ba;
+}
+
+.contacts__mail:hover {
+  color: #62d1ba;
+}
+
+.contacts__mail:focus {
+  color: #d9f0eb;
+  border-color: #d9f0eb;
 }
 
 @media (min-width: $tablet-widths) {
   .contacts {
-    margin-top: 130px;
-  }
-
-  .contacts__button {
-    width:235px;
-    margin: 55px auto;
+    margin-top: 65px;
+    padding-bottom: 160px;
   }
 
   .contacts__list {
@@ -58,20 +72,44 @@
   }
 
   .contacts__title {
+    position: relative;
+
+    margin-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .contacts__title::before {
+    position: absolute;
+    content: "";
+    top: -15px;
+    right: 0;
+
+    width: 47px;
+    height: 82px;
+
+    background-image: url(../img/icon-flag.svg);
+    background-repeat: no-repeat;
   }
 
   .contacts__text {
     font-size: 17px;
     line-height: 30px;
   }
+
+  .contacts__adress {
+    width: 221px;
+  }
+
+  .contacts__mail {
+    width: 210px;
+  }
 }
 
 @media (min-width: $desktop-widths) {
   .contacts {
-    width: 1050px;
-    margin:  160px auto;
+    @include container;
+    margin-top: 44px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
@@ -85,6 +123,8 @@
   }
 
   .contacts__title  {
+    margin-top: 69px;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -94,9 +134,15 @@
     flex-direction: column;
   }
 
-  .contacts__button {
-    width: 230px;
-    flex-grow: 1;
+  .contacts__text {
+    margin-bottom: 40px;
+  }
 
+  .contacts__text--email {
+    margin-bottom: 27px;
+  }
+
+  .contacts__text--adress {
+    margin-bottom: 79px;
   }
 }

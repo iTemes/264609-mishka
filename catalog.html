@@ -10,36 +10,42 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper ">
             <ul class="main-nav__list">
-              <div class="page-header__logo">
+              <li class="page-header__logo">
                 <a href="index.html">
                   <img src="img/logo-mobile.svg" width="85" height="35" alt="Логотип Мишки">
                 </a>
-              </div>
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
+              </li>
               <li class="main-nav__item  main-nav__item--catalog">
-                <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+                <a class="main-nav__link main-nav__link--catalog" href="#">Каталог товаров</a>
               </li>
               <li class="main-nav__item main-nav__item--order">
-                <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+                <a class="main-nav__link main-nav__link--order" href="form.html">Вязание на заказ</a>
               </li>
               <li class="main-nav__item main-nav__item--delivery">
                 <span class="main-nav__delivery">Бесплатная доставка по России</span>
               </li>
               <li class="main-nav__item main-nav__item--search">
                 <a class="main-nav__link main-nav__link--search-icon" href="#"></a>
-                <a class="main-nav__link main-nav__link--hidden" href="#">Поиск по сайту</a>
+                <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
               </li>
               <li class="main-nav__item main-nav__item--user">
                 <a class="main-nav__link main-nav__link--user" href="#">Корзина: пока пуста</a>
+              </li>
+              <li class="main-nav__item main-nav__item--new">
+                <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a>
+              </li>
+              <li class="main-nav__item main-nav__item--sale">
+                <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
-      <h1 class="page__title">
+      <h1 class="page__catalog-title">
         Каталог товаров
       </h1>
     <section class="production">
@@ -52,8 +58,8 @@
               <p class="production__param">Рост 30 см, вес 200 г</p>
             </div>
             <div class="production__order">
-              <b class="production__price">1200 руб.</b>
-              <a class="basket-link" href="#">Корзина</a>
+              <b class="production__price">1 200 руб.</b>
+              <a class="production__basket-link" href="#">Корзина</a>
             </div>
           </div>
         </article>
@@ -66,7 +72,7 @@
             </div>
             <div class="production__order">
               <b class="production__price">690 руб.</b>
-              <a class="basket-link" href="#">Корзина</a>
+              <a class="production__basket-link" href="#">Корзина</a>
             </div>
           </div>
         </article>
@@ -78,8 +84,8 @@
               <p class="production__param">Диаметр 30 см, высота 30 см</p>
             </div>
             <div class="production__order">
-              <b class="production__price">1500 руб.</b>
-              <a class="basket-link" href="#">Корзина</a>
+              <b class="production__price">1 500 руб.</b>
+              <a class="production__basket-link" href="#">Корзина</a>
             </div>
           </div>
         </article>
@@ -111,9 +117,9 @@
           <a class="social-links__item social-links__item--twitter" href="#">Мы в Твиттере</a>
         </p>
         <p class="page-footer__copyright">
-          <b class="page-footer__text">Разработано:</b>
+          <b class="page-footer__text">Разработано</b>
           <a class="page-footer__icon-link" href="https://htmlacademy.ru">
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
+            <img class="page-footer__developer-logo" src="img/htmlacademy.svg" width="30" height="35" alt="Логотип HTML Академии">
           </a>
         </p>
       </div>

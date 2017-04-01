@@ -2,6 +2,8 @@
   min-width: 320px;
   margin: 0;
 
+  font-family: Open Sans, Arial, sans-serif;
+
   background-color: #ffffff;
 }
 
@@ -24,19 +26,22 @@ img {
   overflow: hidden;
 }
 
-.page__title {
+.page__catalog-title,
+.page__order--title {
   @include titles;
   margin: 0 auto;
   margin-bottom: 30px;
-  padding: 80px 0;
+  padding: 75px 0;
   width: 100%;
   background-color: #f1f1f1;
   text-align: center;
 }
 
 @media (min-width: $tablet-widths) {
-  .page__title  {
-    margin-bottom: 80px;
+  .page__catalog-title,
+  .page__order--title  {
+    margin-bottom: 65px;
+    padding: 94px 0;
 
     font-size: 43px;
     line-height: 50px;
@@ -44,10 +49,13 @@ img {
 }
 
 @media (min-width: $desktop-widths) {
-  .page__title--order {
-    margin-bottom: 130px;
+  .page__catalog-title,
+  .page__order--title {
+    padding: 86px 0;
+    margin-bottom: 144px;
 
     font-size: 53px;
     line-height: 57px;
   }
+
 }

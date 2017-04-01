@@ -5,10 +5,10 @@
 .page-header__logo {
   position: relative;
   width: 260px;
-  height: 40px;
+  height: 34px;
   margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 27px;
+  padding-bottom: 19px;
 
   text-align: center;
   background-color: #ffffff;
@@ -17,9 +17,13 @@
 
 
 @media (min-width: $tablet-widths) {
+  .page-header__wrapper {
+    min-height: 90px;
+  }
+
   .page-header {
-    min-height: 80px;
-    border-bottom: 2px solid #ececec;
+    height: 90px;
+    border-bottom: 1px solid #ececec;
   }
 
   .page-header__logo {
@@ -34,6 +38,12 @@
 
 @media (min-width: $desktop-widths) {
   .page-header {
-    @include container;
+    // @include container;
+  }
+
+  .page-header__logo {
+    width: 263px;
+
+    order: 1;
   }
 }
