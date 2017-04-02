@@ -1,4 +1,8 @@
 .featured {
+  padding-bottom: 35px;
+}
+
+.featured__content {
   @include container;
   position: relative;
 
@@ -8,7 +12,6 @@
 
   background-color: #ffffff;
 }
-
 .featured__item-name {
   @include titles;
   margin: 0;
@@ -73,11 +76,14 @@
 
 @media (min-width: $tablet-widths) {
   .featured {
+    padding-bottom: 64px;
+  }
+
+  .featured__content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 55px;
-    padding-bottom: 60px;
+    margin-top: 43px;
   }
 
   .featured__titles {
@@ -150,10 +156,11 @@
 
 @media (min-width: $desktop-widths) {
   .featured {
-    position: relative;
-
-    margin-top: 88px;
     padding-bottom: 95px;
+  }
+
+  .featured_content {
+    position: relative;
   }
 
   .featured__item-name {

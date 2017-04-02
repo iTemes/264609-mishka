@@ -41,6 +41,14 @@ img {
   text-align: center;
 }
 
+.page--underline {
+  background: url(../img/bg-zigzag-line.svg);
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 6px;
+}
+
 @media (min-width: $tablet-widths) {
   .page__catalog-title,
   .page__order--title  {
@@ -49,6 +57,10 @@ img {
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .page--underline {
+    background-size: auto 17px;
   }
 }
 
@@ -60,6 +72,10 @@ img {
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .page--underline {
+    background-size: auto 23px;
   }
 
 }

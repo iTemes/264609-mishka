@@ -1,3 +1,7 @@
+.page-main__title-wrapper {
+  background-color: #f9f9f9;
+}
+
 .page-main__title {
   margin: auto;
   padding-top: 75px;
@@ -17,7 +21,7 @@
   background-image: url(../img/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position:  center -14px;
-  background-color: #fbfbfb;
+  background-color: #f9f9f9;
   background-size: 575px auto;
 }
 
@@ -42,6 +46,8 @@
     width: 500px;
     padding-top: 151px;
     padding-bottom: 370px;
+    padding-left: 134px;
+    padding-right: 134px;
 
     font-size: 43px;
     line-height: 50px;
