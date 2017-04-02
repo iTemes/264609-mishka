@@ -57,6 +57,14 @@
   outline: none;
 }
 
+.reviews__button:hover {
+  opacity: 0.6;
+}
+
+.reviews__button:active {
+  opacity: 0.3;
+}
+
 .reviews__button--prev {
   background: url(../img/icon-left-arrow.svg);
   background-repeat: no-repeat;
@@ -69,6 +77,14 @@
   background-position: center;
 }
 
+@media
+  (min-width: 768px) and (min-resolution: 144dpi),
+  (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .reviews {
+      background-image: url(../img/review@2x.jpg);
+    }
+}
+
 @media (min-width: $tablet-widths) {
   .reviews {
     margin-top: 25px;
@@ -76,6 +92,7 @@
 
     background-image: url(../img/review@1x.jpg);
     background-repeat: no-repeat;
+    background-size: 350px auto;
   }
 
   .reviews__wrapper {

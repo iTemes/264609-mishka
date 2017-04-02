@@ -1,23 +1,78 @@
+.main-products {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .main-products__link {
+  position: relative;
   display: block;
   box-sizing: border-box;
   width: 100%;
   padding: 27px;
   padding-left: 30px;
 
+  text-decoration: none;
+  color: #3bb09d;
+}
+
+.main-products__link--interior:hover {
+  color: #29a592;
+}
+
+.main-products__link--toys:hover {
+  color: #239f8e;
+}
+
+.main-products__link--interior:active {
+  color: #44c0aa;
+}
+
+.main-products__link--toys:active {
+  color: #37b2a0;
+}
+
+.main-products__link:active .main-products__title {
+  color: #8dd5c9;
+}
+
+.main-products__title {
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
   font-family: $main-font;
   color: #ffffff;
-  text-decoration: none;
 }
+
 .main-products__link--interior {
   background-color: #63d1bb;
 }
 
+.main-products__link--interior:hover,
+.main-products__link--interior:active {
+  background-color: #59d5bc;
+}
+
 .main-products__link--toys {
   background-color: #56c3b2;
+}
+
+.main-products__link--toys:hover,
+.main-products__link--toys:active {
+  background-color: #46c1ae;
+}
+
+.main-products__image {
+  position: absolute;
+}
+
+.main-products__image--interior {
+  top: 25px;
+  right: 35px;
+}
+
+.main-products__image--toys {
+  top: 23px;
+  right: 24px;
 }
 
 @media (min-width: $tablet-widths) {
@@ -32,8 +87,21 @@
     padding-top: 30px;
     padding-bottom: 20px;
 
+
+  }
+
+  .main-products__title {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .main-products__image--interior {
+    top: 32px;
+  }
+
+  .main-products__image--toys {
+    top: 35px;
+    right: 31px;
   }
 }
 

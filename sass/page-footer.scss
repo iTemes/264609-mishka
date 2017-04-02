@@ -40,8 +40,17 @@
 
   width: 43px;
   height: 35px;
-
   display: block;
+
+  color: #63d1bb;
+}
+
+.page-footer__icon-link:hover {
+  color: #46c1ae;
+}
+
+.page-footer__icon-link:active {
+  color: #bde3dd;
 }
 
 .page-footer__developer-logo {
@@ -55,12 +64,22 @@
     width: 144px;
     height: 41px;
     padding-right: 95px;
+
+    color: #231f20;
+  }
+
+  .page-footer__logo:hover {
+    color: #46c1ae;
+  }
+
+  .page-footer__logo:active {
+    color: #bde3dd;
   }
 
   .page-footer__copyright {
     width: 220px;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 25px;
     margin-left: 20px;
 
     text-align: left;
@@ -80,7 +99,6 @@
 
 @media (min-width: $desktop-widths) {
   .page-footer__logo {
-    display: block;
     width: 115px;
     height: 41px;
     padding-right: 135px;

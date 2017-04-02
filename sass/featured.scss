@@ -124,6 +124,11 @@
 
   .featured__image {
     margin-top: 55px;
+    width: 334px;
+  }
+
+  .featured__image-item {
+    width: 100%;
   }
 
   .featured__order {
@@ -145,8 +150,10 @@
 
 @media (min-width: $desktop-widths) {
   .featured {
-    margin-top: 140px;
-    padding-bottom: 100px;
+    position: relative;
+
+    margin-top: 88px;
+    padding-bottom: 95px;
   }
 
   .featured__item-name {
@@ -155,6 +162,9 @@
   }
 
   .featured__titles {
+    position: absolute;
+    top: 53px;
+
     justify-content: flex-start;
   }
 
@@ -170,7 +180,9 @@
   }
 
   .featured__text {
+    padding-top: 108px;
     padding-left: 175px;
+    width: 350px;
   }
 
   .featured__description {
@@ -184,5 +196,6 @@
 
   .featured__image {
     margin-top: 0px;
+    width: 525px;
   }
 }

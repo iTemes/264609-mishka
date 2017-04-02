@@ -129,6 +129,11 @@
     line-height: 57px;
   }
 
+  .contacts__title:before {
+    top: -10px;
+    left: -111px;
+  }
+
   .contacts__list {
     display: flex;
     flex-direction: column;
