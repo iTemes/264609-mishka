@@ -7,4 +7,4 @@
 *.sublime*
 css/*.css
 node_modules/
-Thumbs.db
+Thumbs.dbbuild/

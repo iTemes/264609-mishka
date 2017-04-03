@@ -49,7 +49,7 @@
   margin-bottom: 40px;
 }
 
-button.reviews__button {
+.reviews__button {
   width: 130px;
   height: 50px;
   padding: 0;
@@ -70,12 +70,12 @@ button.reviews__button {
 }
 
 .reviews__button--prev {
-  background: url(../img/icon-left-arrow.svg);
+  background-image: url(../img/icon-left-arrow.svg);
 
 }
 
 .reviews__button--next {
-  background: url(../img/icon-right-arrow.svg);
+  background-image: url(../img/icon-right-arrow.svg);
 }
 
 @media

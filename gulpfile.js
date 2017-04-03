@@ -38,7 +38,7 @@ gulp.task("images", function() {
     ]))
     .pipe(gulp.dest("build/img"));
 })
-//
+
 gulp.task("symbols", function() {
   return gulp.src("build/img/icons/*.svg")
     .pipe(svgmin())
