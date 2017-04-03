@@ -62,16 +62,12 @@ img {
 
     font-size: 43px;
     line-height: 50px;
-  }
 
-  .page-catalog__title-underline {
-    display: block;
-    position: absolute;
-
-    bottom: 0;
-
-    height: 23px;
-    width: auto;
+    background-image: url(../img/bg-zigzag-fill.png);
+    background-repeat: no-repeat;
+    background-size: auto 24px;
+    background-repeat: repeat-x;
+    background-position: bottom;
   }
 
   .page--underline {
@@ -87,6 +83,8 @@ img {
 
     font-size: 53px;
     line-height: 57px;
+
+    background-size: auto 36px;
   }
 
   .page-catalog__title-underline {
