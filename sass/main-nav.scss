@@ -154,6 +154,8 @@
   .main-nav__item--user {
     background-color: #ffffff;
     z-index: 100;
+
+    border-bottom: 1px solid #ececec;
   }
 }
 
@@ -226,6 +228,9 @@
   .main-nav__item--delivery {
     order: 2;
     margin-top: 17px;
+
+    z-index: 1;
+    background-color: transparent;
   }
 
   .main-nav__item--catalog,

@@ -104,9 +104,9 @@
     padding-bottom: 32px;
   }
 
-  .main-products__link:hover {
-    background-color: red;
-
+  .main-products__link:hover,
+  .main-products__link:focus {
+    top: -5px;
   }
 
   .main-products__title {

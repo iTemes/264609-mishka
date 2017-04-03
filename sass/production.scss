@@ -18,11 +18,11 @@
 }
 
 .production__desc {
-  margin-top: 24px;
+  padding-top: 24px;
   padding-left: 30px;
   padding-bottom: 30px;
 
-  border-bottom: 1px solid #ececec;
+  border: 1px solid #ececec;
 }
 
 .production__name {
@@ -162,7 +162,7 @@
     margin: 0;
     width: 50%;
 
-    border: 2px solid #ececec;
+    border-left: none;
   }
 
   .production__info {
@@ -186,6 +186,8 @@
   .production__param {
     width: 220px;
     font: $regular-font;
+
+    border: none;
   }
 
   .production__price {
@@ -237,6 +239,8 @@
     align-content: space-between;
     width: 100%;
     padding-top: 25px;
+
+    border: 1px solid #ececec;
   }
 
   .production__param {

@@ -49,14 +49,29 @@ img {
   background-size: auto 6px;
 }
 
+.page-catalog__title-underline {
+  display: none;
+}
+
 @media (min-width: $tablet-widths) {
   .page__catalog-title,
   .page__order--title  {
+    position: relative;
     margin-bottom: 65px;
     padding: 94px 0;
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .page-catalog__title-underline {
+    display: block;
+    position: absolute;
+
+    bottom: 0;
+
+    height: 23px;
+    width: auto;
   }
 
   .page--underline {
@@ -72,6 +87,10 @@ img {
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .page-catalog__title-underline {
+    height: 36px;
   }
 
   .page--underline {

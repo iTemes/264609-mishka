@@ -149,7 +149,8 @@
 
   border: 2px solid #444444;
 }
-
+.form-group__input--checkbox:focus + .form-group__caption::before,
+.form-group__input--radio:focus + .form-group__caption::before,
 .form-group__input--checkbox + .form-group__caption:hover::before,
 .form-group__input--radio + .form-group__caption:hover::before {
   border: 2px solid #62d1ba;
