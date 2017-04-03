@@ -130,7 +130,10 @@
     height: auto;
   }
 
-  .main-nav--nojs .main-nav__item {
+  .main-nav--nojs .main-nav__item--catalog,
+  .main-nav--nojs .main-nav__item--order,
+  .main-nav--nojs .main-nav__item--search,
+  .main-nav--nojs .main-nav__item--user {
     display: block;
   }
 
@@ -153,7 +156,7 @@
 
   .main-nav__item--user {
     background-color: #ffffff;
-    z-index: 100;
+    z-index: 10;
 
     border-bottom: 1px solid #ececec;
   }
