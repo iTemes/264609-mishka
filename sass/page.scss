@@ -12,6 +12,10 @@ img {
   height: auto;
 }
 
+// picture {
+//   font-size: 0;
+// }
+
 .visually-hidden{
   position: absolute;
 
@@ -37,15 +41,48 @@ img {
   text-align: center;
 }
 
+.page--underline {
+  background: url(../img/bg-zigzag-line.svg);
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 6px;
+}
+
+.page-catalog__title-underline {
+  display: none;
+}
+
 @media (min-width: $tablet-widths) {
   .page__catalog-title,
   .page__order--title  {
+    position: relative;
     margin-bottom: 65px;
     padding: 94px 0;
 
     font-size: 43px;
     line-height: 50px;
+
+    background-image: url(../img/wave@1x.png);
+    background-repeat: no-repeat;
+    background-size: auto 12px;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-color: rgba(241, 241, 241, 0.95);
   }
+
+  .page--underline {
+    background-size: auto 17px;
+  }
+}
+
+@media
+  (min-width: 768px) and (min-resolution: 144dpi),
+  (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .page__catalog-title,
+    .page__order--title {
+      background-image: url(../img/wave@2x.png);
+    }
 }
 
 @media (min-width: $desktop-widths) {
@@ -56,6 +93,16 @@ img {
 
     font-size: 53px;
     line-height: 57px;
+
+    background-size: auto 18px;
+  }
+
+  .page-catalog__title-underline {
+    height: 36px;
+  }
+
+  .page--underline {
+    background-size: auto 23px;
   }
 
 }

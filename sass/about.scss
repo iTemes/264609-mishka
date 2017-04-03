@@ -1,6 +1,6 @@
 .about {
   @include container;
-  margin-top: 70px;
+  margin-top: 35px;
 }
 
 .about__title {
@@ -28,40 +28,22 @@
   background-repeat: no-repeat;
 }
 
+.about__image {
+  position: absolute;
+}
+
 .about__text {
   margin: 0;
   padding-top: 60px;
 }
 
 .about__item--materials {
-  background-image: url(../img/icon-feature-1.svg);
   order: 0;
-}
-
-.about__item--style {
-  background-image: url(../img/icon-feature-3.svg);
-
-}
-
-.about__item--media {
-  background-image: url(../img/icon-feature-5.svg);
-}
-
-.about__item--knitting {
-  background-image: url(../img/icon-feature-2.svg);
-}
-
-.about__item--help {
-  background-image: url(../img/icon-feature-4.svg);
-}
-
-.about__item--present {
-  background-image: url(../img/icon-feature-6.svg);
 }
 
 @media (min-width: $tablet-widths) {
   .about {
-    margin-top: 60px;
+    margin-top: 53px;
   }
 
   .about__list {
@@ -80,6 +62,7 @@
   }
 
   .about__item {
+    position: relative;
     width: 50%;
     margin-bottom: 53px;
   }

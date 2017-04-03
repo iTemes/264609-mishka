@@ -105,8 +105,32 @@
   margin-bottom: 38px;
 }
 
-.form-group__input--checkbox + .form-group__caption,
-.form-group__input--radio + .form-group__caption {
+.form-group__item--phone,
+.form-group__item--email {
+  position: relative;
+
+  color: #cccccc;
+}
+
+.form-group__item--phone:hover,
+.form-group__item--email:hover {
+  color: #62d1ba;
+}
+
+.form-group__mail-icon,
+.form-group__phone-icon {
+  position: absolute;
+
+  right: 5px;
+  bottom: 8px;
+}
+
+.form-group__phone-icon {
+  bottom: 10px;
+}
+
+.form-group__caption,
+.form-group__caption {
   position: relative;
 
   cursor: pointer;
@@ -125,7 +149,8 @@
 
   border: 2px solid #444444;
 }
-
+.form-group__input--checkbox:focus + .form-group__caption::before,
+.form-group__input--radio:focus + .form-group__caption::before,
 .form-group__input--checkbox + .form-group__caption:hover::before,
 .form-group__input--radio + .form-group__caption:hover::before {
   border: 2px solid #62d1ba;
@@ -166,7 +191,7 @@
   border-radius: 0;
   background-color: transparent;
   background-image: url(../img/icon-tick.svg);
-  background-size: calc(70%);
+  background-size: 70%;
   background-repeat: no-repeat;
 
   display: none;
@@ -198,11 +223,10 @@
   color: #444444;
 }
 
-.form-group__input:hover {
-  border-color: #62d1ba;
-}
-
-.form-group__input:focus {
+.form-group__input:hover,
+.form-group__textarea:hover,
+.form-group__input:focus,
+.form-group__textarea:focus {
   border-color: #62d1ba;
 }
 
@@ -218,14 +242,6 @@
   font: $regular-font;
   border: 2px solid #000000;
   outline: none;
-}
-
-.form-group__textarea:hover {
-  border-color: #62d1ba;
-}
-
-.form-group__textarea:focus {
-  border-color: #62d1ba;
 }
 
 @media (min-width: $tablet-widths) {
