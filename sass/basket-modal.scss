@@ -1,6 +1,5 @@
 .basket-modal {
   @include container;
-  display: none;
   position: fixed;
   z-index: 100;
   top: 50%;
@@ -11,6 +10,10 @@
   border: 1px solid #c7c7c7;
   box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
+}
+
+.basket-modal--hidden {
+  display: none;
 }
 
 .basket-modal__overlay {
@@ -74,8 +77,11 @@
 
 @media (min-width: $tablet-widths) {
   .basket-modal {
+    box-sizing: border-box;
     width: 570px;
     margin: auto;
+    margin-left: -285px;
+    margin-top: -170px;
   }
 
   .basket-modal__form {
