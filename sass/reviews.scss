@@ -57,6 +57,8 @@
   font-size: 0;
   border: 1px solid #ececec;
   background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .reviews__button:hover {
@@ -69,14 +71,11 @@
 
 .reviews__button--prev {
   background: url(../img/icon-left-arrow.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+
 }
 
 .reviews__button--next {
   background: url(../img/icon-right-arrow.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 @media
