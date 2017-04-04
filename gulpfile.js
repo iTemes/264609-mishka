@@ -40,7 +40,7 @@ gulp.task("images", function() {
 })
 
 gulp.task("symbols", function() {
-  return gulp.src("build/img/icons/*.svg")
+  return gulp.src("img/icons/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
@@ -52,7 +52,7 @@ gulp.task("symbols", function() {
 gulp.task("copy", function() {
     return gulp.src([
       "fonts/**/*.{woff,woff2}",
-      "img/**",
+      "img/*.{png,jpg,gif,svg}",
       "js/**",
       "*.html"
     ], {
